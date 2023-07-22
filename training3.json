@@ -1,0 +1,52 @@
+{
+    "topic": "Biology",
+    "difficulty": 3,
+    "limitations": "No problems involving human anatomy",
+    "format": {
+      "geneticsProblems": 4,
+      "ecologyProblems": 4
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "In a certain species of plant, the allele for tall height (T) is dominant over the allele for short height (t). A heterozygous plant (Tt) is crossed with a homozygous recessive plant (tt). What are the possible genotypes and phenotypes of their offspring?",
+        "solution": "The possible genotypes of their offspring can be determined using Punnett squares. The gametes produced by the heterozygous plant (Tt) are half T and half t, while the gametes produced by the homozygous recessive plant (tt) are all t. Crossing these gametes, we get the following genotypes in the offspring: TT, Tt, Tt, and tt. The phenotypes of the offspring can be determined based on the genotype. TT and Tt individuals will have tall height, and tt individuals will have short height. Therefore, the possible genotypes of the offspring are TT, Tt, Tt, and tt, and the corresponding phenotypes are tall, tall, tall, and short."
+      },
+      {
+        "type": "word",
+        "problem": "A couple has a child with blood type O. The mother's blood type is AB, and the father's blood type is B. Is it possible for the child to have a different blood type than O, and if so, what are the possible genotypes of the parents?",
+        "solution": "The blood type O is recessive, and blood type AB is co-dominant with blood type A and B. The possible genotypes for blood type AB are IAIB, the possible genotypes for blood type B are IBIB, and the possible genotypes for blood type O are ii. If the child has blood type O (ii), it means the child inherited an 'i' allele from each parent. Therefore, the mother must have at least one 'i' allele, and the father must have at least one 'i' allele. The possible genotypes for the mother are IAi or IBi, and the possible genotype for the father is IBi. Therefore, it is possible for the child to have a different blood type than O, and the possible genotypes of the parents are IAi and IBi for the mother and IBi for the father."
+      },
+      {
+        "type": "word",
+        "problem": "A population of birds has two color morphs: red and blue. In a study, it was found that 60% of the birds are red and 40% are blue. If the red morph is determined by a single gene with two alleles (R and r), what are the expected genotype frequencies of the population under Hardy-Weinberg equilibrium?",
+        "solution": "Under Hardy-Weinberg equilibrium, the genotype frequencies can be calculated using the allele frequencies. Let p be the frequency of the R allele and q be the frequency of the r allele. The total frequency of the two alleles is 1, so p + q = 1. Given that 60% of the birds are red (RR or Rr) and 40% are blue (rr), the frequencies of the R and r alleles can be determined. Let p be the frequency of the R allele (RR and Rr), so p = 0.60. Then, q = 1 - p = 1 - 0.60 = 0.40. The genotype frequencies under Hardy-Weinberg equilibrium are p^2 for RR, 2pq for Rr, and q^2 for rr. Plugging in the values, we get 0.60^2 ≈ 0.36 for RR, 2 * 0.60 * 0.40 ≈ 0.48 for Rr, and 0.40^2 = 0.16 for rr. Therefore, the expected genotype frequencies of the population are approximately 36% for RR, 48% for Rr, and 16% for rr."
+      },
+      {
+        "type": "word",
+        "problem": "A pond ecosystem consists of frogs, fish, and algae. Frogs eat both fish and algae, while fish eat only algae. What type of relationship exists between the frogs and the fish in this ecosystem?",
+        "solution": "The relationship between the frogs and the fish in this ecosystem is a competitive relationship. Both frogs and fish are consumers in the ecosystem, and they both rely on algae as a food source. Since both species compete for the same food resource (algae), they are in competition with each other. This type of relationship is called interspecific competition, where different species compete for limited resources in the same habitat. In this case, the frogs and fish are competing for the algae, which can affect their population sizes and distribution within the ecosystem."
+      },
+      {
+        "type": "word",
+        "problem": "A forest ecosystem has a population of deer and a population of wolves. Deer are herbivores, while wolves are carnivores that prey on deer. Describe the predator-prey relationship between the deer and the wolves.",
+        "solution": "The relationship between the deer and the wolves in this ecosystem is a predator-prey relationship. Wolves are the predators, and deer are the prey. As carnivores, wolves hunt and consume deer as their primary food source. Predation is a key ecological interaction that influences the population dynamics of both species. When the wolf population increases, they hunt more deer, leading to a decrease in the deer population. As the deer population decreases, the availability of food for the wolves also decreases, which can lead to a decrease in the wolf population. This cycle of population fluctuations is known as the predator-prey cycle. Predation plays a crucial role in regulating the populations and maintaining the balance within the forest ecosystem."
+      },
+      {
+        "type": "word",
+        "problem": "A population of rabbits in a grassland ecosystem has grown rapidly due to abundant food resources. What limiting factors could potentially control the population of rabbits in this ecosystem?",
+        "solution": "Even in an environment with abundant food resources, populations can still be limited by other factors. In the case of the rabbit population in the grassland ecosystem, potential limiting factors could include predation, disease, and resource availability. Predators, such as foxes or hawks, could prey on the rabbits and keep their population in check. Diseases could also spread through the rabbit population and reduce their numbers. Additionally, the availability of shelter and suitable nesting sites could limit the population's growth. Although food resources may currently be abundant, these other factors could act as limiting factors and play a role in controlling the rabbit population in the long term."
+      },
+      {
+        "type": "word",
+        "problem": "A lake ecosystem is experiencing an overgrowth of algae, leading to a decrease in oxygen levels in the water. What is this phenomenon called, and what could be the potential consequences for other organisms in the ecosystem?",
+        "solution": "The overgrowth of algae in a lake ecosystem is called eutrophication. Eutrophication occurs when excess nutrients, such as nitrogen and phosphorus, enter the water, promoting the rapid growth of algae. As the algae blooms, they block sunlight from reaching underwater plants, leading to a decrease in plant growth. When the algae die and decompose, bacteria consume oxygen during the decomposition process, leading to a decrease in dissolved oxygen levels in the water. This decrease in oxygen can have detrimental effects on other organisms in the ecosystem. Fish and other aquatic organisms depend on dissolved oxygen in the water for respiration. When oxygen levels drop, fish may suffocate, leading to fish kills. Additionally, other organisms that rely on oxygen, such as insects and other invertebrates, can be negatively impacted. Eutrophication can disrupt the balance of the lake ecosystem and have cascading effects on its biodiversity and overall health."
+      },
+      {
+        "type": "word",
+        "problem": "A population of rabbits inhabiting an island has limited resources, and the available food supply cannot support an unlimited number of rabbits. What is the carrying capacity of the island for the rabbit population?",
+        "solution": "The carrying capacity of an environment refers to the maximum population size of a species that the environment can support sustainably with the available resources. In the case of the rabbit population on the island, the carrying capacity would be the maximum number of rabbits that the island's available food supply can sustain over the long term. Once the rabbit population reaches the carrying capacity, the available food resources would be fully utilized, and any further population growth would be limited by resource scarcity. It's important to note that carrying capacity can vary over time and can be influenced by factors such as seasonality, weather patterns, and changes in the availability of resources."
+      }
+    ]
+  }
+  

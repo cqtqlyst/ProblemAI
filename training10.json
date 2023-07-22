@@ -1,0 +1,33 @@
+{
+    "topic": "Biology",
+    "difficulty": 3,
+    "limitations": "No problems involving advanced molecular biology",
+    "format": {
+      "geneticsProblems": 2,
+      "ecologyProblems": 2,
+      "anatomyProblems": 2
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "In humans, the allele for brown eyes (B) is dominant, and the allele for blue eyes (b) is recessive. If a person with heterozygous brown eyes (Bb) marries someone with blue eyes (bb), what is the probability of their child having blue eyes?",
+        "solution": "To solve this genetics problem, we can use Punnett squares to determine the possible combinations of alleles in the offspring.\n\n- Parent 1 genotype: Bb (heterozygous brown eyes)\n- Parent 2 genotype: bb (blue eyes)\n\nThe Punnett square for this cross is:\n\n      |  b |  b |\n------------------\n  B | Bb | Bb |\n------------------\n  b | bb | bb |\n------------------\n\nIn the Punnett square, all the offspring have one 'b' allele from Parent 1 and one 'b' allele from Parent 2.\n\nTherefore, the probability of their child having blue eyes (bb genotype) is 50%, or 0.5."
+      },
+      {
+        "type": "word",
+        "problem": "An ecologist is studying a population of rabbits in a forest. The initial population of rabbits is 100. In the first year, 30 new rabbits are born, and 20 rabbits die due to predation. In the second year, 25 new rabbits are born, and 15 rabbits die due to disease. Calculate the population size of rabbits at the end of the second year.",
+        "solution": "To calculate the population size of rabbits at the end of the second year, we can use the concept of population growth.\n\n- Initial population (P0) = 100 rabbits\n- Annual birth rate (B) = 30 rabbits (year 1) + 25 rabbits (year 2) = 55 rabbits\n- Annual death rate (D) = 20 rabbits (year 1) + 15 rabbits (year 2) = 35 rabbits\n\nThe population growth formula is given by:\nPopulation (P) = P0 + (B - D)\n\nYear 1:\nP1 = 100 + (55 - 35) = 120 rabbits\n\nYear 2:\nP2 = 120 + (55 - 35) = 140 rabbits\n\nSo, the population size of rabbits at the end of the second year is 140 rabbits."
+      },
+      {
+        "type": "word",
+        "problem": "The human heart has four chambers: two atria and two ventricles. Blood enters the right atrium through the superior and inferior vena cava and then flows to the right ventricle. From the right ventricle, it is pumped to the lungs for oxygenation. After oxygenation, blood returns to the left atrium through the pulmonary veins and then flows to the left ventricle. From the left ventricle, it is pumped out to the rest of the body through the aorta. Identify the chambers and vessels involved in the oxygenation of blood.",
+        "solution": "The oxygenation of blood in the human heart involves the following chambers and vessels:\n\n- Chambers involved:\n  1. Right atrium: Blood enters the heart from the body through the superior and inferior vena cava and collects in the right atrium.\n  2. Right ventricle: From the right atrium, blood flows into the right ventricle, which then pumps the blood to the lungs for oxygenation.\n  3. Left atrium: After oxygenation in the lungs, oxygen-rich blood returns to the heart through the pulmonary veins and collects in the left atrium.\n  4. Left ventricle: From the left atrium, blood flows into the left ventricle, which then pumps the oxygenated blood out to the rest of the body.\n\n- Vessels involved:\n  1. Superior vena cava: It brings deoxygenated blood from the upper body parts to the right atrium.\n  2. Inferior vena cava: It brings deoxygenated blood from the lower body parts to the right atrium.\n  3. Pulmonary veins: These carry oxygenated blood from the lungs to the left atrium.\n  4. Aorta: It is the main artery that carries oxygenated blood from the left ventricle to the rest of the body.\n\nThis circulation ensures that oxygenated blood is distributed to the body's tissues and deoxygenated blood is sent to the lungs for oxygenation."
+      },
+      {
+        "type": "word",
+        "problem": "A student is learning about the different types of human joints. Identify and describe three types of joints found in the human body.",
+        "solution": "The human body has three main types of joints, classified based on their range of motion and structure:\n\n1. Hinge Joint: A hinge joint allows movement in one plane, like the opening and closing of a door. It is found in the human elbow and knee. The articulating bones have a convex and concave surface that allows flexion and extension movements.\n\n2. Ball-and-Socket Joint: A ball-and-socket joint allows a wide range of motion in multiple planes. It consists of a rounded head of one bone fitting into a cup-like socket of another bone. The shoulder and hip joints are examples of ball-and-socket joints.\n\n3. Pivot Joint: A pivot joint allows rotational movement around a central axis. It is found between the first and second cervical vertebrae of the neck, enabling the head to rotate from side to side.\n\nThese different types of joints provide the human body with its remarkable flexibility and ability to perform a wide range of movements."
+      }
+    ]
+  }
+  

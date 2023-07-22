@@ -1,0 +1,43 @@
+{
+    "topic": "Physics",
+    "difficulty": 4,
+    "limitations": "No problems involving advanced quantum mechanics",
+    "format": {
+      "mechanicsProblems": 2,
+      "electricityProblems": 2,
+      "opticsProblems": 2
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "A ball is thrown vertically upward with an initial velocity of 20 m/s. How high does it go and how long does it take to reach its highest point? (Assume no air resistance)",
+        "solution": "To solve this problem, we can use the equations of motion for free-fall under gravity. The upward motion of the ball will slow down until it reaches its highest point where its velocity becomes zero. Then, it will start falling back down. Let's use the following equations:\n\n- Final velocity (v) = 0 m/s (at the highest point)\n- Initial velocity (u) = 20 m/s\n- Acceleration due to gravity (g) = -9.8 m/s^2 (negative because it opposes the motion)\n- Displacement (s) = ? (height reached)\n\n1. First, let's find the time it takes to reach the highest point:\nUsing the equation: v = u + gt\n0 = 20 - 9.8t\nt = 20 / 9.8\nt ≈ 2.04 seconds\n\n2. Next, let's find the height reached (displacement) at the highest point:\nUsing the equation: v^2 = u^2 + 2as\n0 = (20)^2 + 2(-9.8)s\ns = (20)^2 / (2 * 9.8)\ns ≈ 20.41 meters\n\nSo, the ball goes to a height of approximately 20.41 meters and it takes around 2.04 seconds to reach its highest point."
+      },
+      {
+        "type": "word",
+        "problem": "A car is traveling along a straight road at a constant speed of 25 m/s. The driver sees an obstacle ahead and applies the brakes, resulting in a constant deceleration of 5 m/s^2. How long does it take for the car to come to a stop?",
+        "solution": "To find the time it takes for the car to come to a stop, we can use the equation of motion for uniformly decelerated motion:\n\n- Initial velocity (u) = 25 m/s (positive because it's in the forward direction)\n- Final velocity (v) = 0 m/s (the car comes to a stop)\n- Acceleration (a) = -5 m/s^2 (negative because it's deceleration)\n\nUsing the equation: v = u + at\n0 = 25 + (-5)t\nt = 25 / 5\nt = 5 seconds\n\nSo, it takes the car 5 seconds to come to a complete stop after the driver applies the brakes."
+      },
+      {
+        "type": "word",
+        "problem": "An electric circuit consists of a 12V battery and three resistors connected in series. The resistors have values of 3 ohms, 6 ohms, and 9 ohms. Calculate the total resistance in the circuit and the current flowing through the circuit.",
+        "solution": "In a series circuit, the total resistance is the sum of individual resistances, and the current remains the same throughout the circuit. To calculate the total resistance and the current, we can use Ohm's law and the formula for the total resistance in a series circuit:\n\n- Battery voltage (V) = 12V\n- Resistor values (R1, R2, R3) = 3 ohms, 6 ohms, 9 ohms, respectively\n- Total resistance (R_total) = ? (ohms)\n- Current (I) = ? (amperes)\n\n1. Calculate the total resistance:\nR_total = R1 + R2 + R3\nR_total = 3 + 6 + 9\nR_total = 18 ohms\n\n2. Calculate the current using Ohm's law:\nI = V / R_total\nI = 12 / 18\nI = 0.6667 amperes\n\nSo, the total resistance in the circuit is 18 ohms, and the current flowing through the circuit is approximately 0.6667 amperes."
+      },
+      {
+        "type": "word",
+        "problem": "An electric circuit contains a 24V battery and two resistors connected in parallel. The resistors have values of 4 ohms and 6 ohms. Calculate the total resistance in the circuit and the current flowing through the battery.",
+        "solution": "In a parallel circuit, the reciprocal of the total resistance is the sum of the reciprocals of individual resistances. Additionally, the voltage across each resistor is the same as the battery voltage, and the total current is the sum of the currents through each resistor. To calculate the total resistance and the current, we can use the formulas:\n\n- Battery voltage (V) = 24V\n- Resistor values (R1, R2) = 4 ohms, 6 ohms, respectively\n- Total resistance (R_total) = ? (ohms)\n- Current (I) = ? (amperes)\n\n1. Calculate the total resistance:\n1 / R_total = 1 / R1 + 1 / R2\n1 / R_total = 1 / 4 + 1 / 6\n1 / R_total = (3 + 2) / 12\n1 / R_total = 5 / 12\nR_total = 12 / 5\nR_total = 2.4 ohms\n\n2. Calculate the current using Ohm's law:\nI = V / R_total\nI = 24 / 2.4\nI = 10 amperes\n\nSo, the total resistance in the circuit is 2.4 ohms, and the current flowing through the battery is 10 amperes."
+      },
+      {
+        "type": "word",
+        "problem": "A convex lens with a focal length of 20 cm is used to form an image of an object. The object is placed 30 cm away from the lens. Calculate the position and nature (real or virtual) of the image formed by the lens.",
+        "solution": "To find the position and nature of the image formed by the convex lens, we can use the lens formula and the magnification formula:\n\n- Focal length of the lens (f) = 20 cm\n- Object distance from the lens (u) = -30 cm (negative because the object is on the left side of the lens)\n- Image distance from the lens (v) = ? (centimeters)\n- Magnification (M) = ? (unitless)\n\nUsing the lens formula: 1 / f = 1 / v - 1 / u\n1 / 20 = 1 / v - 1 / (-30)\n1 / v = 1 / 20 + 1 / 30\n1 / v = (3 + 2) / 60\n1 / v = 5 / 60\nv = 60 / 5\nv = 12 cm\n\nThe image is formed at a distance of 12 cm from the lens.\n\nNext, let's calculate the magnification using the magnification formula: M = -v / u\nM = -12 / (-30)\nM = 0.4\n\nThe magnification is positive, which means the image is upright. Since the magnification is less than 1, the image is smaller than the object. Therefore, the image formed by the convex lens is virtual, upright, and smaller than the object."
+      },
+      {
+        "type": "word",
+        "problem": "A concave mirror with a focal length of 15 cm is used to form an image of an object. The object is placed 25 cm away from the mirror. Calculate the position and nature (real or virtual) of the image formed by the mirror.",
+        "solution": "To find the position and nature of the image formed by the concave mirror, we can use the mirror formula and the magnification formula:\n\n- Focal length of the mirror (f) = -15 cm (negative for a concave mirror)\n- Object distance from the mirror (u) = -25 cm (negative because the object is on the left side of the mirror)\n- Image distance from the mirror (v) = ? (centimeters)\n- Magnification (M) = ? (unitless)\n\nUsing the mirror formula: 1 / f = 1 / v + 1 / u\n1 / (-15) = 1 / v + 1 / (-25)\n-1/15 = 1/v - 1/25\n1/v = 1/25 - 1/15\n1/v = (3 - 5)/75\n1/v = -2/75\nv = -75/2\nv = -37.5 cm\n\nThe image is formed at a distance of -37.5 cm from the mirror.\n\nNext, let's calculate the magnification using the magnification formula: M = -v / u\nM = (-(-37.5)) / (-25)\nM = 1.5\n\nThe magnification is positive, which means the image is upright. Since the magnification is greater than 1, the image is larger than the object. Therefore, the image formed by the concave mirror is virtual, upright, and larger than the object."
+      }
+    ]
+  }
+  

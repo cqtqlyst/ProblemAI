@@ -1,0 +1,62 @@
+{
+    "topic": "Computer Science",
+    "difficulty": 3,
+    "limitations": "No questions about specific programming languages",
+    "format": {
+      "wordProblems": 3,
+      "multipleChoiceProblems": 3
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "A software development project is estimated to take 6 months to complete with a team of 8 developers. If the project needs to be completed in 4 months, how many additional developers are needed assuming the productivity per developer remains constant?",
+        "solution": "Let 'D' be the number of additional developers needed. The productivity per developer remains constant, so we can set up a proportion: 8 developers / 6 months = (8 + D) developers / 4 months. Cross-multiplying and solving for 'D', we get D = 8 developers. Therefore, 8 additional developers are needed to complete the project in 4 months."
+      },
+      {
+        "type": "word",
+        "problem": "A network consists of 5 computers. How many direct connections are there among these computers if each computer needs to be directly connected to every other computer?",
+        "solution": "If each computer needs to be directly connected to every other computer, we can use the combination formula to find the number of direct connections. The formula is C(n, 2) = n! / (2!(n-2)!), where 'n' is the number of computers. Substituting n = 5, we get C(5, 2) = 5! / (2!3!) = 10. Therefore, there are 10 direct connections among the 5 computers."
+      },
+      {
+        "type": "word",
+        "problem": "A company's database contains 100,000 records. If a binary search algorithm is used, how many maximum comparisons are needed to find a specific record in the worst-case scenario?",
+        "solution": "In a binary search algorithm, the maximum comparisons needed to find a specific record in the worst-case scenario is equal to the number of times the array is divided in half until the target record is found. For 100,000 records, the number of maximum comparisons is log2(100,000) ≈ 16.61. Since the comparison must be a whole number, we round up to 17. Therefore, a maximum of 17 comparisons are needed in the worst-case scenario."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following data structures uses the Last-In-First-Out (LIFO) principle?",
+        "choices": [
+          "A. Queue",
+          "B. Stack",
+          "C. Linked List",
+          "D. Tree",
+          "E. Heap"
+        ],
+        "solution": "The data structure that uses the Last-In-First-Out (LIFO) principle is B. Stack. In a stack, the last element added is the first one to be removed. It follows a 'last in, first out' behavior, similar to a stack of plates."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "In computer networking, which protocol is commonly used for secure data transmission over the internet?",
+        "choices": [
+          "A. HTTP",
+          "B. FTP",
+          "C. SMTP",
+          "D. TCP/IP",
+          "E. HTTPS"
+        ],
+        "solution": "The protocol commonly used for secure data transmission over the internet is E. HTTPS (Hypertext Transfer Protocol Secure). It is an extension of HTTP and uses encryption to ensure secure communication between clients and servers."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "What is the purpose of an 'if' statement in programming?",
+        "choices": [
+          "A. To declare a variable",
+          "B. To create a loop",
+          "C. To define a function",
+          "D. To perform conditional execution",
+          "E. To import external libraries"
+        ],
+        "solution": "The purpose of an 'if' statement in programming is D. To perform conditional execution. It allows the program to make decisions based on a certain condition and execute specific code blocks accordingly."
+      }
+    ]
+  }

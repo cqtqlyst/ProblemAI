@@ -1,0 +1,75 @@
+{
+    "topic": "Algebra",
+    "difficulty": 3,
+    "limitations": "Only problems about linear equations",
+    "format": {
+      "wordProblems": 3,
+      "multipleChoiceProblems": 4
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "The sum of two consecutive even integers is 46. Find the integers.",
+        "solution": "Let's denote the smaller even integer as 'x', and the next consecutive even integer as 'x+2'. The sum of the two integers can be expressed as x + (x+2) = 46. Solving for 'x', we get x = 22. Therefore, the two consecutive even integers are 22 and 24."
+      },
+      {
+        "type": "word",
+        "problem": "A rectangular garden has a length that is 6 meters longer than its width. If the area of the garden is 72 square meters, find the dimensions of the garden.",
+        "solution": "Let's denote the width of the garden as 'w'. Since the length is 6 meters longer than the width, the length is 'w + 6'. The area of a rectangle is given by length × width. Therefore, we can set up the equation (w + 6) × w = 72. Solving for 'w', we get w = 6. Thus, the width of the garden is 6 meters, and the length is 6 + 6 = 12 meters."
+      },
+      {
+        "type": "word",
+        "problem": "A group of friends went to a restaurant for dinner. The total bill, including tax and tip, was $120. The tax was 7% of the meal cost, and the tip was $10. Find the cost of the meal before tax and tip.",
+        "solution": "Let's denote the cost of the meal before tax and tip as 'x'. The tax is 7% of 'x', which is 0.07x. The tip is $10. The total bill can be expressed as x + 0.07x + 10 = 120. Solving for 'x', we get x = (120 - 10) / 1.07 ≈ 100. Therefore, the cost of the meal before tax and tip is approximately $100."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following equations represents a line parallel to y = 2x + 3?",
+        "choices": [
+          "A. y = 2x - 5",
+          "B. y = -2x + 3",
+          "C. y = 2x + 6",
+          "D. y = -3x + 2",
+          "E. y = 3x - 2"
+        ],
+        "solution": "Two lines are parallel if they have the same slope. In the equation y = 2x + 3, the slope is 2. Therefore, the equation that represents a line parallel to y = 2x + 3 is A. y = 2x - 5."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "What is the solution to the equation 3x + 5 = 17?",
+        "choices": [
+          "A. x = 4",
+          "B. x = 6",
+          "C. x = 8",
+          "D. x = 12",
+          "E. x = 14"
+        ],
+        "solution": "To find the solution to the equation, we need to isolate 'x' on one side. Subtracting 5 from both sides of the equation, we get 3x = 12. Dividing both sides by 3, we find x = 4. Therefore, the solution to the equation is A. x = 4."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following systems of equations has no solution?",
+        "choices": [
+          "A. { 2x + 3y = 10, 4x + 6y = 20 }",
+          "B. { 3x - y = 5, 6x - 2y = 10 }",
+          "C. { 2x + y = 5, 4x + 2y = 10 }",
+          "D. { x + y = 3, x - y = 1 }",
+          "E. { 3x + y = 7, 3x + y = 8 }"
+        ],
+        "solution": "A system of equations has no solution when the lines representing the equations are parallel and never intersect. For the system of equations to be parallel, the slopes of the lines must be the same, and the coefficients of 'x' and 'y' in both equations must be proportional. In option E, the equations are 3x + y = 7 and 3x + y = 8. Since the equations represent parallel lines, the system has no solution. Therefore, the correct answer is E."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following equations represents a line perpendicular to y = -2x + 5?",
+        "choices": [
+          "A. y = 2x + 3",
+          "B. y = -2x + 3",
+          "C. y = (1/2)x + 2",
+          "D. y = 2x - 5",
+          "E. y = 2x + 5"
+        ],
+        "solution": "Two lines are perpendicular if the product of their slopes is -1. The slope of the equation y = -2x + 5 is -2. Therefore, the equation that represents a line perpendicular to y = -2x + 5 is C. y = (1/2)x + 2."
+      }
+    ]
+  }
+  

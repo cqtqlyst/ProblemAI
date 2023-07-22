@@ -1,0 +1,104 @@
+{
+    "topic": "APCalculusBC",
+    "difficulty": 5,
+    "limitations": "No problems about trigonometry",
+    "format": {
+      "wordProblems": 4,
+      "multipleChoiceProblems": 6
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "A car is traveling along a straight road at a constant velocity of 60 mph. How far will the car travel in 3 hours?",
+        "solution": "To find the distance traveled, we multiply the velocity by the time: 60 mph * 3 hours = 180 miles. Therefore, the car will travel 180 miles in 3 hours."
+      },
+      {
+        "type": "word",
+        "problem": "A tank contains 500 gallons of water. Water is being pumped into the tank at a rate of 10 gallons per minute, while water is being drained from the tank at a rate of 5 gallons per minute. After how many minutes will the tank be half full?",
+        "solution": "Let's denote the time in minutes as 't'. The rate of water being pumped in is 10 gallons/minute and the rate of water being drained is 5 gallons/minute. The net rate of change of water in the tank is 10 - 5 = 5 gallons/minute. We can set up the following equation: 500 + 5t = (1/2)(500). Solving for 't', we find t = 50 minutes. Therefore, the tank will be half full after 50 minutes."
+      },
+      {
+        "type": "word",
+        "problem": "A rocket is launched vertically into the air. Its height above the ground at time 't' seconds is given by the function h(t) = -16t^2 + 64t + 80. Find the time it takes for the rocket to reach its maximum height.",
+        "solution": "To find the time it takes for the rocket to reach its maximum height, we need to find the vertex of the parabolic function h(t) = -16t^2 + 64t + 80. The vertex of a parabola in the form y = ax^2 + bx + c is given by the formula x = -b / (2a). In this case, a = -16 and b = 64. Plugging in these values, we get t = -64 / (2*(-16)) = 2 seconds. Therefore, it takes the rocket 2 seconds to reach its maximum height."
+      },
+      {
+        "type": "word",
+        "problem": "A company produces and sells widgets. The production cost, in dollars, for 'x' widgets is given by the function C(x) = 1000 + 5x^2, while the revenue, in dollars, for 'x' widgets is given by the function R(x) = 20x. Find the number of widgets the company must sell to break even.",
+        "solution": "To find the number of widgets the company must sell to break even, we need to find the value of 'x' for which the cost equals the revenue. Setting C(x) = R(x), we get 1000 + 5x^2 = 20x. Rearranging the equation, we have 5x^2 - 20x + 1000 = 0. We can solve this quadratic equation using the quadratic formula: x = (-b ± √(b^2 - 4ac)) / (2a). Plugging in the values, we get x = (20 ± √(20^2 - 4*5*1000)) / (2*5). Simplifying, we find x ≈ 14.14 or x ≈ 5.86. Since the number of widgets must be a whole number, the company must sell 15 widgets to break even."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "What is the limit of the function f(x) = 3x^2 - 2x + 1 as x approaches 2?",
+        "choices": [
+          "A. 7",
+          "B. 9",
+          "C. 11",
+          "D. 13",
+          "E. The limit does not exist"
+        ],
+        "solution": "To find the limit of the function as x approaches 2, we can directly substitute 2 into the function: f(2) = 3(2)^2 - 2(2) + 1 = 12 - 4 + 1 = 9. Therefore, the limit of the function as x approaches 2 is 9. The correct answer is B."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "What is the limit of the sequence a_n = (3n^2 + 2n - 1) / (n + 1) as n approaches infinity?",
+        "choices": [
+          "A. 3",
+          "B. 4",
+          "C. 5",
+          "D. 6",
+          "E. The limit does not exist"
+        ],
+        "solution": "To find the limit of the sequence as n approaches infinity, we can divide both the numerator and denominator by the highest power of n in the expression, which is n^2. This gives us a_n = (3 + 2/n - 1/n^2) / (1 + 1/n). Taking the limit as n approaches infinity, the terms with 2/n and 1/n^2 become negligible compared to the dominant terms. Therefore, the limit simplifies to 3/1 = 3. The correct answer is A."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "What is the derivative of the function f(x) = 4x^3 - 2x^2 + 5x - 1?",
+        "choices": [
+          "A. 12x^2 - 4x + 5",
+          "B. 12x^2 - 4x - 5",
+          "C. 12x^2 - 4x",
+          "D. 12x^2 - 2x + 5",
+          "E. None of the above"
+        ],
+        "solution": "To find the derivative of the function, we need to differentiate each term separately. The derivative of x^n is nx^(n-1). Applying this rule, we get f'(x) = 3(4x^2) - 2(2x) + 5 = 12x^2 - 4x + 5. Therefore, the derivative of the function is A. The correct answer is A."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "What is the integral of the function f(x) = 2x^2 + 3x - 1?",
+        "choices": [
+          "A. 2x^3 + (3/2)x^2 - x + C",
+          "B. 2x^3 + (3/2)x^2 - x",
+          "C. x^3 + (3/2)x^2 - x + C",
+          "D. x^3 + (3/2)x^2 - x",
+          "E. None of the above"
+        ],
+        "solution": "To find the integral of the function, we need to find the antiderivative of each term separately. The antiderivative of x^n is (1/(n+1))x^(n+1). Applying this rule, we get F(x) = (2/3)x^3 + (3/2)x^2 - x + C, where C is the constant of integration. Therefore, the integral of the function is A. The correct answer is A."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "What is the second derivative of the function f(x) = 5x^3 - 4x^2 + 3x + 2?",
+        "choices": [
+          "A. 30x - 8",
+          "B. 30x^2 - 8x + 3",
+          "C. 15x^2 - 8x + 3",
+          "D. 15x^2 - 8x",
+          "E. None of the above"
+        ],
+        "solution": "To find the second derivative of the function, we need to differentiate the function twice. The derivative of x^n is nx^(n-1). Applying this rule, we get f'(x) = 15x^2 - 8x + 3. Differentiating again, we get f''(x) = 30x - 8. Therefore, the second derivative of the function is A. The correct answer is A."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "What is the Taylor series expansion of the function f(x) = sin(x) centered at x = 0?",
+        "choices": [
+          "A. x - (1/6)x^3 + (1/120)x^5 - (1/5040)x^7 + ...",
+          "B. x + (1/6)x^3 - (1/120)x^5 + (1/5040)x^7 + ...",
+          "C. x - (1/2)x^2 + (1/6)x^3 - (1/24)x^4 + ...",
+          "D. x + (1/2)x^2 - (1/6)x^3 + (1/24)x^4 + ...",
+          "E. None of the above"
+        ],  
+        "solution": "The Taylor series expansion of the function sin(x) centered at x = 0 is given by the formula f(x) = x - (1/6)x^3 + (1/120)x^5 - (1/5040)x^7 + ..., where the coefficients are derived from the derivatives of sin(x) evaluated at x = 0. Therefore, the Taylor series expansion of the function is A. The correct answer is A."
+      }
+    ]
+  }
+  

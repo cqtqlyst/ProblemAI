@@ -1,0 +1,47 @@
+{
+    "topic": "Various",
+    "difficulty": 4,
+    "limitations": null,
+    "format": {
+      "wordProblems": 1,
+      "multipleChoiceProblems": 2,
+      "definitionProblems": 1
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "A company produces three products: A, B, and C. Last month, they produced 800 units of A, 500 units of B, and 300 units of C. The selling price per unit for A is $25, for B is $30, and for C is $40. Calculate the total revenue earned by the company last month.",
+        "solution": "To calculate the total revenue, we need to multiply the number of units produced by their respective selling prices and then sum the results.\n\nRevenue from Product A = 800 units * $25/unit = $20,000\nRevenue from Product B = 500 units * $30/unit = $15,000\nRevenue from Product C = 300 units * $40/unit = $12,000\n\nTotal Revenue = $20,000 + $15,000 + $12,000 = $47,000\n\nThe total revenue earned by the company last month was $47,000."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following elements has the chemical symbol 'Fe'?",
+        "choices": [
+          "A. Iron",
+          "B. Gold",
+          "C. Silver",
+          "D. Copper",
+          "E. Zinc"
+        ],
+        "solution": "The chemical symbol 'Fe' represents A. Iron. Iron is a chemical element with atomic number 26 and is one of the most abundant elements on Earth."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Who wrote the play 'Romeo and Juliet'?",
+        "choices": [
+          "A. William Shakespeare",
+          "B. Jane Austen",
+          "C. Charles Dickens",
+          "D. Mark Twain",
+          "E. F. Scott Fitzgerald"
+        ],
+        "solution": "The play 'Romeo and Juliet' was written by A. William Shakespeare. It is one of Shakespeare's most famous tragedies, depicting the tragic love story of the titular characters."
+      },
+      {
+        "type": "definition",
+        "problem": "Define 'Photosynthesis' and explain its importance in the ecosystem.",
+        "solution": "Photosynthesis is the process by which green plants, algae, and some bacteria convert carbon dioxide and water into glucose (a type of sugar) and oxygen, using sunlight as an energy source. The overall chemical reaction can be represented as:\n\n6CO2 + 6H2O + sunlight → C6H12O6 (glucose) + 6O2\n\nImportance in the Ecosystem:\nPhotosynthesis is vital for the ecosystem due to the following reasons:\n\n1. Oxygen Production: Photosynthesis is the primary source of oxygen in the atmosphere. It releases oxygen as a byproduct, which is essential for the survival of aerobic organisms.\n\n2. Food Production: Photosynthesis produces glucose, which serves as a source of food for plants and provides energy for other organisms through the food chain.\n\n3. Carbon Dioxide Regulation: Photosynthesis helps regulate the concentration of carbon dioxide in the atmosphere, acting as a carbon sink and mitigating the greenhouse effect.\n\n4. Energy Flow: Photosynthesis initiates the flow of energy through the ecosystem. Autotrophs (organisms that can produce their own food) convert solar energy into chemical energy, which is then transferred to heterotrophs (organisms that cannot produce their own food) through consumption.\n\nPhotosynthesis plays a fundamental role in sustaining life on Earth, maintaining the balance of gases in the atmosphere, and supporting the food chain."
+      }
+    ]
+  }
+  

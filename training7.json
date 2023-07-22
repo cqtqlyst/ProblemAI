@@ -1,0 +1,39 @@
+{
+    "topic": "Computer Science",
+    "difficulty": 5,
+    "limitations": "No problems involving advanced calculus",
+    "format": {
+      "algorithmsProblems": 3,
+      "dataStructuresProblems": 2,
+      "programmingProblems": 2,
+      "machineLearningProblems": 1
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "Implement the quicksort algorithm to sort the following array of integers in non-decreasing order: [8, 3, 1, 5, 2, 4, 7, 6]",
+        "solution": "Quicksort is a divide-and-conquer sorting algorithm that works by selecting a 'pivot' element and partitioning the array around the pivot. Here's a step-by-step implementation of quicksort for the given array:\n\n1. Select a pivot element (e.g., the last element): pivot = 6\n2. Rearrange the array such that all elements less than the pivot are on the left, and all elements greater than the pivot are on the right:\n[3, 1, 5, 2, 4] (elements less than 6) | [8, 7] (elements greater than 6)\n3. Recursively apply quicksort to the left and right partitions:\nLeft partition: [3, 1, 5, 2, 4]\nRight partition: [8, 7]\n4. Repeat steps 1-3 for the left and right partitions:\nLeft partition: [1] | [3, 2, 5, 4]\nRight partition: [7] | [8]\n5. The final sorted array is obtained by concatenating the left and right partitions:\n[1, 2, 3, 4, 5, 6, 7, 8]\n\nTherefore, the sorted array in non-decreasing order is [1, 2, 3, 4, 5, 6, 7, 8]."
+      },
+      {
+        "type": "word",
+        "problem": "Given the following binary search tree, perform an inorder traversal to visit the nodes in ascending order:\n\n        15\n      /    \\\n     10    20\n    / \\    / \\\n   5  12  17  25",
+        "solution": "Inorder traversal visits the nodes of a binary search tree in ascending order. Here's the inorder traversal for the given binary search tree:\n\n1. Start at the root (15).\n2. Traverse to the left subtree: 5 -> 10 -> 12\n3. Visit the root node (15).\n4. Traverse to the right subtree: 17 -> 20 -> 25\n5. The inorder traversal sequence is: 5, 10, 12, 15, 17, 20, 25\n\nTherefore, the nodes of the binary search tree are visited in ascending order: 5, 10, 12, 15, 17, 20, 25."
+      },
+      {
+        "type": "word",
+        "problem": "Write a Python function to calculate the factorial of a positive integer using recursion.",
+        "solution": "Factorial is the product of all positive integers less than or equal to a given positive integer. We can calculate the factorial of a positive integer n using recursion.\n\nHere's the Python function to calculate the factorial of a positive integer:\n\n```python\ndef factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * factorial(n-1)\n\n# Test the function\nresult = factorial(5)\nprint(result)  # Output: 120\n```\n\nThe function checks if the input n is 0 or 1 (base case) and returns 1. Otherwise, it calculates the factorial by multiplying n with the factorial of (n-1) obtained through recursion."
+      },
+      {
+        "type": "word",
+        "problem": "Write a Java program to implement a linked list and reverse it iteratively.",
+        "solution": "In Java, a linked list can be implemented using a Node class that contains the data and a reference to the next node in the list. Here's the Java program to implement a linked list and reverse it iteratively:\n\n```java\nclass Node {\n    int data;\n    Node next;\n\n    public Node(int data) {\n        this.data = data;\n        this.next = null;\n    }\n}\n\npublic class LinkedList {\n    Node head;\n\n    public LinkedList() {\n        head = null;\n    }\n\n    // Method to add a node at the end of the list\n    public void append(int data) {\n        Node newNode = new Node(data);\n        if (head == null) {\n            head = newNode;\n        } else {\n            Node current = head;\n            while (current.next != null) {\n                current = current.next;\n            }\n            current.next = newNode;\n        }\n    }\n\n    // Method to reverse the linked list iteratively\n    public void reverse() {\n        Node prev = null;\n        Node current = head;\n        Node next = null;\n        while (current != null) {\n            next = current.next;\n            current.next = prev;\n            prev = current;\n            current = next;\n        }\n        head = prev;\n    }\n\n    // Method to display the linked list\n    public void display() {\n        Node current = head;\n        while (current != null) {\n            System.out.print(current.data + \" -> \");\n            current = current.next;\n        }\n        System.out.println(\"null\");\n    }\n\n    // Main method to test the linked list\n    public static void main(String[] args) {\n        LinkedList list = new LinkedList();\n        list.append(1);\n        list.append(2);\n        list.append(3);\n        list.append(4);\n\n        System.out.println(\"Original linked list:\");\n        list.display();\n\n        list.reverse();\n\n        System.out.println(\"Reversed linked list:\");\n        list.display();\n    }\n}\n```\n\nThe `LinkedList` class includes methods to add nodes at the end and to reverse the linked list iteratively. The `reverse()` method uses three pointers (prev, current, and next) to reverse the links between nodes and updates the head to the new first node."
+      },
+      {
+        "type": "word",
+        "problem": "Implement a linear regression model in Python using the scikit-learn library to predict house prices based on the number of bedrooms and square footage of the house.",
+        "solution": "Linear regression is a simple machine learning algorithm used for regression tasks. In Python, we can use the scikit-learn library to implement a linear regression model. First, make sure you have scikit-learn installed (`pip install scikit-learn`).\n\nHere's the Python code to implement a linear regression model for predicting house prices based on the number of bedrooms and square footage of the house:\n\n```python\nfrom sklearn.linear_model import LinearRegression\nimport numpy as np\n\n# Sample data: number of bedrooms and square footage of houses\nbedrooms = np.array([1, 2, 3, 2, 4, 3, 3, 2, 2, 3])\nsquare_footage = np.array([800, 1200, 1500, 1100, 2000, 1600, 1800, 1300, 1200, 1400])\nhouse_prices = np.array([100000, 180000, 220000, 150000, 280000, 210000, 230000, 160000, 170000, 200000])\n\n# Reshape the data\nX = np.column_stack((bedrooms, square_footage))\n\n# Create and fit the linear regression model\nmodel = LinearRegression()\nmodel.fit(X, house_prices)\n\n# Predict house prices for new data\nnew_bedrooms = np.array([2, 3, 4])\nnew_square_footage = np.array([1500, 1800, 2200])\nnew_data = np.column_stack((new_bedrooms, new_square_footage))\n\npredicted_prices = model.predict(new_data)\nprint(predicted_prices)\n```\n\nThe code first imports the necessary modules and creates sample data for the number of bedrooms, square footage, and corresponding house prices. It then creates a feature matrix `X` by stacking the bedroom and square footage arrays horizontally. The linear regression model is created using `LinearRegression()` and fitted to the data using `fit()`. Finally, the model is used to predict house prices for new data (`new_data`) based on the number of bedrooms and square footage, and the predictions are printed."
+      }
+    ]
+  }
+  

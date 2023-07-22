@@ -1,0 +1,57 @@
+{
+    "topic": "Astronomy",
+    "difficulty": 4,
+    "limitations": "No questions about extraterrestrial life",
+    "format": {
+      "wordProblems": 2,
+      "multipleChoiceProblems": 3
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "The star Betelgeuse is classified as a red supergiant and is one of the largest known stars. If Betelgeuse were placed at the center of our solar system, how far would its outer surface extend, approximately? Assume the Sun's position is replaced by Betelgeuse.",
+        "solution": "Betelgeuse is approximately 900 times larger in diameter than the Sun. The Sun's diameter is about 1.4 million kilometers, so if Betelgeuse were placed at the center of our solar system, its outer surface would extend up to approximately 900 * 1.4 million kilometers ≈ 1.26 billion kilometers. Therefore, its outer surface would reach about 1.26 billion kilometers from the center of the solar system."
+      },
+      {
+        "type": "word",
+        "problem": "The Hubble Space Telescope is a renowned observatory in space. If it takes a photograph of a distant galaxy that is 13 billion light-years away, how far away is the galaxy in kilometers? (Assume the speed of light is approximately 300,000 kilometers per second)",
+        "solution": "To find the distance to the galaxy in kilometers, we can use the formula: Distance = (Speed of light) * (Time in seconds). Given that the galaxy is 13 billion light-years away, we convert it to kilometers: 13 billion light-years * (about 9.46 trillion kilometers per light-year). Thus, the distance is approximately 122.98 billion light-years, and when we multiply it by the speed of light (300,000 kilometers per second), we get about 36.89 sextillion kilometers. Therefore, the galaxy is approximately 36.89 sextillion kilometers away from us."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "What is the name of the phenomenon where light waves are bent as they pass through a medium with varying refractive index, creating the appearance of shimmering stars on a hot day?",
+        "choices": [
+          "A. Reflection",
+          "B. Refraction",
+          "C. Diffraction",
+          "D. Scintillation",
+          "E. Dispersion"
+        ],
+        "solution": "The correct answer is D. Scintillation. Scintillation is the phenomenon where light waves are bent as they pass through a medium with varying refractive index, such as the Earth's atmosphere, and it causes stars to twinkle or shimmer in the night sky."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which planet in our solar system is known for its prominent ring system?",
+        "choices": [
+          "A. Mars",
+          "B. Jupiter",
+          "C. Saturn",
+          "D. Uranus",
+          "E. Neptune"
+        ],
+        "solution": "The planet in our solar system known for its prominent ring system is C. Saturn. Saturn's ring system is one of the most stunning features of the planet and consists of a complex arrangement of icy particles."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "What is the phenomenon that occurs when the Moon passes directly between the Earth and the Sun, casting a shadow on Earth?",
+        "choices": [
+          "A. Lunar Eclipse",
+          "B. Solar Eclipse",
+          "C. Full Moon",
+          "D. Crescent Moon",
+          "E. Harvest Moon"
+        ],
+        "solution": "The correct answer is B. Solar Eclipse. A solar eclipse occurs when the Moon passes directly between the Earth and the Sun, blocking out the sunlight and casting a shadow on the Earth's surface."
+      }
+    ]
+  }

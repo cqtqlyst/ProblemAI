@@ -1,0 +1,54 @@
+{
+    "topic": "Physics",
+    "difficulty": 3,
+    "limitations": "No problems involving calculus",
+    "format": {
+      "mechanicsProblems": 4,
+      "electromagnetismProblems": 3,
+      "opticsProblems": 2,
+      "thermodynamicsProblems": 1
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "A car is traveling at a constant speed of 20 m/s. How far will the car travel in 6 seconds?",
+        "solution": "To find the distance traveled, we use the formula: distance = speed * time. Plugging in the values, we get: distance = 20 m/s * 6 s = 120 meters. Therefore, the car will travel 120 meters in 6 seconds."
+      },
+      {
+        "type": "word",
+        "problem": "A ball is thrown vertically upward with an initial velocity of 15 m/s. How high will the ball go before it starts falling back down?",
+        "solution": "The maximum height reached by the ball can be found using the kinematic equation: final velocity^2 = initial velocity^2 + 2 * acceleration * displacement. Since the ball reaches its highest point, the final velocity is 0 m/s. The initial velocity is 15 m/s, and the acceleration due to gravity is approximately -9.8 m/s^2 (negative because it acts downward). Solving for the displacement, we get: displacement = (0 m/s)^2 - (15 m/s)^2 / (2 * -9.8 m/s^2) ≈ 11.5 meters. Therefore, the ball will reach a height of approximately 11.5 meters before falling back down."
+      },
+      {
+        "type": "word",
+        "problem": "A block with a mass of 2 kg is pushed along a horizontal surface with a constant force of 10 N. If the coefficient of kinetic friction is 0.3, calculate the acceleration of the block.",
+        "solution": "The net force acting on the block can be found using the formula: net force = applied force - frictional force. The applied force is 10 N, and the frictional force can be calculated as: frictional force = coefficient of friction * normal force. The normal force is equal to the weight of the block, which is mass * gravitational acceleration (approximately 9.8 m/s^2). So, normal force = 2 kg * 9.8 m/s^2 ≈ 19.6 N. Plugging in the values, we get: frictional force = 0.3 * 19.6 N ≈ 5.88 N. Now, we can find the net force: net force = 10 N - 5.88 N ≈ 4.12 N. Finally, we can calculate the acceleration using Newton's second law: acceleration = net force / mass = 4.12 N / 2 kg ≈ 2.06 m/s^2. Therefore, the acceleration of the block is approximately 2.06 m/s^2."
+      },
+      {
+        "type": "word",
+        "problem": "A spring with a spring constant of 200 N/m is compressed by 0.1 meters. Calculate the potential energy stored in the spring.",
+        "solution": "The potential energy stored in a spring can be calculated using the formula: potential energy = (1/2) * spring constant * (compression distance)^2. Plugging in the values, we get: potential energy = (1/2) * 200 N/m * (0.1 m)^2 = 1 J (joule). Therefore, the potential energy stored in the spring is 1 joule."
+      },
+      {
+        "type": "word",
+        "problem": "An electron with a charge of -1.6 x 10^-19 C is accelerated through a potential difference of 100 V. Calculate the kinetic energy of the electron after acceleration.",
+        "solution": "The kinetic energy of a charged particle after being accelerated through a potential difference can be calculated using the formula: kinetic energy = charge * potential difference. The charge of the electron is -1.6 x 10^-19 C, and the potential difference is 100 V. Plugging in the values, we get: kinetic energy = -1.6 x 10^-19 C * 100 V = -1.6 x 10^-17 J (joules). Since kinetic energy cannot be negative, we take the magnitude of the value, and the kinetic energy of the electron after acceleration is approximately 1.6 x 10^-17 J."
+      },
+      {
+        "type": "word",
+        "problem": "A converging lens with a focal length of 20 cm forms an image of an object placed 40 cm away from the lens. Is the image real or virtual, and is it magnified or reduced?",
+        "solution": "For a converging lens, the focal length is positive. The image formed by the lens can be classified as real or virtual based on the object's distance from the lens. If the object is placed beyond the focal point (object distance > focal length), the image is real and inverted. If the object is placed between the focal point and the lens (object distance < focal length), the image is virtual and upright. In this case, the object distance (40 cm) is greater than the focal length (20 cm), so the image is real and inverted. The magnification can be calculated as: magnification = image distance / object distance. Plugging in the values, we get: magnification = (-20 cm) / (40 cm) = -0.5. The negative sign indicates that the image is inverted compared to the object, and the magnitude of the magnification is less than 1, which means the image is reduced in size."
+      },
+      {
+        "type": "word",
+        "problem": "A concave mirror with a focal length of 15 cm forms an image of an object placed 30 cm away from the mirror. Is the image real or virtual, and is it magnified or reduced?",
+        "solution": "For a concave mirror, the focal length is positive. The image formed by the mirror can be classified as real or virtual based on the object's distance from the mirror. If the object is placed beyond the focal point (object distance > focal length), the image is real and inverted. If the object is placed between the focal point and the mirror (object distance < focal length), the image is virtual and upright. In this case, the object distance (30 cm) is greater than the focal length (15 cm), so the image is real and inverted. The magnification can be calculated using the mirror formula: magnification = - (image distance / object distance). Plugging in the values, we get: magnification = - (-15 cm / 30 cm) = 0.5. The positive sign indicates that the image is upright compared to the object, and the magnitude of the magnification is less than 1, which means the image is reduced in size."
+      },
+      {
+        "type": "word",
+        "problem": "A heat engine operates between two reservoirs at temperatures of 500 K and 300 K, respectively. If the engine absorbs 2000 J of heat from the high-temperature reservoir, calculate the amount of heat it rejects to the low-temperature reservoir.",
+        "solution": "The efficiency of a heat engine operating between two temperatures can be calculated using the formula: efficiency = 1 - (T_cold / T_hot). T_hot is the temperature of the high-temperature reservoir (500 K), and T_cold is the temperature of the low-temperature reservoir (300 K). Plugging in the values, we get: efficiency = 1 - (300 K / 500 K) = 1 - 0.6 = 0.4. The efficiency of the heat engine is 0.4, which means it converts 40% of the absorbed heat into work. The rest (60%) is rejected as heat to the low-temperature reservoir. To find the amount of heat rejected, we use the formula: heat rejected = total heat absorbed - work done. The total heat absorbed is 2000 J, and the work done can be calculated as: work done = efficiency * total heat absorbed = 0.4 * 2000 J = 800 J. Therefore, the amount of heat rejected to the low-temperature reservoir is: heat rejected = 2000 J - 800 J = 1200 J."
+      }
+    ]
+  }
+  

@@ -1,0 +1,62 @@
+{
+    "topic": "History",
+    "difficulty": 3,
+    "limitations": "No questions about modern history (after 1900)",
+    "format": {
+      "wordProblems": 3,
+      "multipleChoiceProblems": 3
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "In which year did Christopher Columbus first arrive in the Americas?",
+        "solution": "Christopher Columbus first arrived in the Americas on October 12, 1492. He made landfall on an island in the present-day Bahamas and thus began the European exploration and colonization of the New World."
+      },
+      {
+        "type": "word",
+        "problem": "The signing of the Magna Carta in England in 1215 marked a significant event in history. What was the primary purpose of the Magna Carta?",
+        "solution": "The primary purpose of the Magna Carta was to limit the power of the monarchy and protect the rights of the English nobility and freemen. It was a crucial document that established the principle of rule of law and influenced the development of constitutional rights and government in later centuries."
+      },
+      {
+        "type": "word",
+        "problem": "During the American Revolutionary War, a key battle took place in 1777, turning the tide in favor of the American forces. What was the name of this battle?",
+        "solution": "The key battle that took place in 1777 during the American Revolutionary War was the Battle of Saratoga. It was a turning point in the war as it resulted in a decisive American victory, leading to France officially entering the war as an ally of the United States."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which ancient civilization was known for its advancements in mathematics, including the development of the concept of zero and the decimal system?",
+        "choices": [
+          "A. Ancient Greece",
+          "B. Ancient Rome",
+          "C. Ancient Egypt",
+          "D. Ancient China",
+          "E. Ancient India"
+        ],
+        "solution": "The ancient civilization known for its advancements in mathematics, including the development of the concept of zero and the decimal system, is E. Ancient India. Indian mathematicians made significant contributions to mathematics, and their work laid the foundation for many modern mathematical concepts."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "The construction of the Great Wall of China began during the reign of which Chinese dynasty?",
+        "choices": [
+          "A. Shang Dynasty",
+          "B. Qin Dynasty",
+          "C. Han Dynasty",
+          "D. Tang Dynasty",
+          "E. Ming Dynasty"
+        ],
+        "solution": "The construction of the Great Wall of China began during the reign of B. Qin Dynasty. It was Emperor Qin Shi Huang who initiated the construction of various walls that later became part of the Great Wall during the third century BCE."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "The famous French military leader Napoleon Bonaparte was eventually exiled to an island after his defeat in the Battle of Waterloo. Which island was he exiled to?",
+        "choices": [
+          "A. Elba",
+          "B. Corsica",
+          "C. St. Helena",
+          "D. Sicily",
+          "E. Madagascar"
+        ],
+        "solution": "Napoleon Bonaparte was exiled to C. St. Helena after his defeat in the Battle of Waterloo in 1815. He spent the final years of his life in exile on this remote island in the South Atlantic Ocean."
+      }
+    ]
+  }

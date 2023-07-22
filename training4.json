@@ -1,0 +1,62 @@
+{
+    "topic": "Chemistry",
+    "difficulty": 4,
+    "limitations": "No problems involving organic chemistry",
+    "format": {
+      "stoichiometryProblems": 5,
+      "gasLawsProblems": 5
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "In a chemical reaction, 10 grams of methane (CH4) react with an excess of oxygen (O2) to produce carbon dioxide (CO2) and water (H2O). Calculate the mass of carbon dioxide and water produced.",
+        "solution": "First, we need to write and balance the chemical equation for the reaction: CH4 + 2O2 → CO2 + 2H2O. The molar masses of the compounds involved are: CH4 = 16.05 g/mol, O2 = 32.00 g/mol, CO2 = 44.01 g/mol, and H2O = 18.02 g/mol. To calculate the mass of carbon dioxide produced, we use stoichiometry and the molar ratio between CH4 and CO2: 10 g CH4 * (1 mol CH4 / 16.05 g CH4) * (1 mol CO2 / 1 mol CH4) * (44.01 g CO2 / 1 mol CO2) ≈ 27.55 g CO2. Similarly, to calculate the mass of water produced, we use the molar ratio between CH4 and H2O: 10 g CH4 * (1 mol CH4 / 16.05 g CH4) * (2 mol H2O / 1 mol CH4) * (18.02 g H2O / 1 mol H2O) ≈ 22.50 g H2O. Therefore, approximately 27.55 grams of carbon dioxide and 22.50 grams of water are produced."
+      },
+      {
+        "type": "word",
+        "problem": "A 2.5 L container of nitrogen gas (N2) is at a pressure of 3.0 atm. If the gas is compressed to a volume of 1.5 L, what will be the new pressure of the gas (assuming constant temperature)?",
+        "solution": "According to Boyle's law, for a given amount of gas at constant temperature, the pressure and volume are inversely proportional. The initial pressure P1 is 3.0 atm, and the initial volume V1 is 2.5 L. The final volume V2 is 1.5 L. To find the final pressure P2, we use the formula: P1 * V1 = P2 * V2. Plugging in the values, we get: 3.0 atm * 2.5 L = P2 * 1.5 L. Solving for P2, we get: P2 = (3.0 atm * 2.5 L) / 1.5 L ≈ 5.0 atm. Therefore, the new pressure of the gas after compression will be approximately 5.0 atm."
+      },
+      {
+        "type": "word",
+        "problem": "A sample of calcium carbonate (CaCO3) with a mass of 100 grams is heated, and all the carbon dioxide gas (CO2) is collected. Calculate the volume of carbon dioxide gas collected at STP (standard temperature and pressure).",
+        "solution": "To calculate the volume of carbon dioxide gas collected at STP, we need to use the ideal gas law. The ideal gas law is given by the equation PV = nRT, where P is the pressure, V is the volume, n is the number of moles of gas, R is the ideal gas constant (0.0821 L atm / mol K), and T is the temperature in Kelvin. At STP, the temperature is 273 K, and the pressure is 1 atm. First, we need to find the number of moles of carbon dioxide gas. The molar mass of CO2 is 44.01 g/mol. So, 100 g CaCO3 * (1 mol CO2 / 44.01 g CO2) ≈ 2.27 mol CO2. Now, we can calculate the volume of gas: V = (2.27 mol CO2 * 0.0821 L atm / mol K * 273 K) / 1 atm ≈ 52.47 L. Therefore, approximately 52.47 liters of carbon dioxide gas are collected at STP."
+      },
+      {
+        "type": "word",
+        "problem": "A chemical reaction produces hydrogen gas (H2) by reacting zinc metal (Zn) with hydrochloric acid (HCl). If 25 grams of zinc react with an excess of hydrochloric acid, calculate the volume of hydrogen gas produced at STP.",
+        "solution": "First, we need to write and balance the chemical equation for the reaction: Zn + 2HCl → ZnCl2 + H2. The molar mass of Zn is 65.38 g/mol, and the molar mass of H2 is 2.02 g/mol. To calculate the number of moles of zinc, we use the formula: 25 g Zn * (1 mol Zn / 65.38 g Zn) ≈ 0.383 mol Zn. Since the reaction produces 1 mole of hydrogen gas for every mole of zinc, we will have 0.383 moles of H2 gas. Now, we can calculate the volume of gas at STP using the ideal gas law. At STP, the temperature is 273 K, and the pressure is 1 atm. V = (0.383 mol H2 * 0.0821 L atm / mol K * 273 K) / 1 atm ≈ 8.30 L. Therefore, approximately 8.30 liters of hydrogen gas are produced at STP."
+      },
+      {
+        "type": "word",
+        "problem": "Ammonium nitrate (NH4NO3) decomposes upon heating to produce nitrogen gas (N2) and water vapor (H2O). If 100 grams of ammonium nitrate decompose, calculate the volume of nitrogen gas and water vapor produced at STP.",
+        "solution": "First, we need to write and balance the chemical equation for the decomposition of ammonium nitrate: NH4NO3 → N2 + 2H2O. The molar mass of NH4NO3 is 80.05 g/mol, the molar mass of N2 is 28.02 g/mol, and the molar mass of H2O is 18.02 g/mol. To calculate the number of moles of ammonium nitrate, we use the formula: 100 g NH4NO3 * (1 mol NH4NO3 / 80.05 g NH4NO3) ≈ 1.249 mol NH4NO3. According to the balanced equation, 1 mole of ammonium nitrate produces 1 mole of nitrogen gas and 2 moles of water vapor. Therefore, we will have 1.249 moles of N2 gas and 2.498 moles of H2O vapor. Now, we can calculate the volumes of gases at STP using the ideal gas law. At STP, the temperature is 273 K, and the pressure is 1 atm. For nitrogen gas (N2): V(N2) = (1.249 mol N2 * 0.0821 L atm / mol K * 273 K) / 1 atm ≈ 29.28 L. For water vapor (H2O): V(H2O) = (2.498 mol H2O * 0.0821 L atm / mol K * 273 K) / 1 atm ≈ 54.72 L. Therefore, approximately 29.28 liters of nitrogen gas and 54.72 liters of water vapor are produced at STP."
+      },
+      {
+        "type": "word",
+        "problem": "A gas sample has a volume of 2.0 L and a pressure of 1.5 atm. If the temperature of the gas is 25 degrees Celsius, calculate the number of moles of gas present.",
+        "solution": "To calculate the number of moles of gas present, we use the ideal gas law. The ideal gas law is given by the equation PV = nRT, where P is the pressure, V is the volume, n is the number of moles of gas, R is the ideal gas constant (0.0821 L atm / mol K), and T is the temperature in Kelvin. First, we need to convert the temperature from Celsius to Kelvin. Kelvin temperature = Celsius temperature + 273. So, the temperature in Kelvin is 25 + 273 = 298 K. Now, we can calculate the number of moles of gas: n = (1.5 atm * 2.0 L) / (0.0821 L atm / mol K * 298 K) ≈ 0.122 mol. Therefore, approximately 0.122 moles of gas are present."
+      },
+      {
+        "type": "word",
+        "problem": "A 4.0 L container of nitrogen gas (N2) is at a pressure of 2.0 atm and a temperature of 50 degrees Celsius. If the gas is allowed to expand to a volume of 6.0 L while keeping the pressure constant, calculate the new temperature of the gas in Kelvin.",
+        "solution": "According to Gay-Lussac's law, for a given amount of gas at constant volume, the pressure and temperature are directly proportional. The initial pressure P1 is 2.0 atm, and the initial temperature T1 is 50 degrees Celsius. The final volume V2 is 6.0 L. To find the final temperature T2, we use the formula: (P1 * T1) / V1 = (P2 * T2) / V2. Since the pressure is constant, we can simplify the equation to: T2 = (P1 * T1 * V2) / (V1 * P2). Plugging in the values, we get: T2 = (2.0 atm * 50 + 273) * 6.0 L / (4.0 L * 2.0 atm) ≈ 175.5 K. Therefore, the new temperature of the gas in Kelvin is approximately 175.5 K."
+      },
+      {
+        "type": "word",
+        "problem": "A sample of oxygen gas (O2) occupies a volume of 10.0 L at a pressure of 3.0 atm and a temperature of 25 degrees Celsius. If the gas is compressed to a volume of 5.0 L while keeping the temperature constant, calculate the new pressure of the gas in atm.",
+        "solution": "According to Boyle's law, for a given amount of gas at constant temperature, the pressure and volume are inversely proportional. The initial pressure P1 is 3.0 atm, and the initial volume V1 is 10.0 L. The final volume V2 is 5.0 L. To find the final pressure P2, we use the formula: P1 * V1 = P2 * V2. Plugging in the values, we get: 3.0 atm * 10.0 L = P2 * 5.0 L. Solving for P2, we get: P2 = (3.0 atm * 10.0 L) / 5.0 L = 6.0 atm. Therefore, the new pressure of the gas after compression is 6.0 atm."
+      },
+      {
+        "type": "word",
+        "problem": "A gas sample has a volume of 2.5 L and a temperature of 30 degrees Celsius. If the gas is heated to 80 degrees Celsius at constant pressure, calculate the new volume of the gas in liters.",
+        "solution": "According to Charles's law, for a given amount of gas at constant pressure, the volume and temperature are directly proportional. The initial volume V1 is 2.5 L, and the initial temperature T1 is 30 degrees Celsius. The final temperature T2 is 80 degrees Celsius. To find the final volume V2, we use the formula: V2 = (T2 / T1) * V1. First, we need to convert the temperatures to Kelvin. Kelvin temperature = Celsius temperature + 273. So, the initial temperature in Kelvin is 30 + 273 = 303 K, and the final temperature in Kelvin is 80 + 273 = 353 K. Now, we can calculate the new volume: V2 = (353 K / 303 K) * 2.5 L ≈ 2.92 L. Therefore, the new volume of the gas after heating is approximately 2.92 liters."
+      },
+      {
+        "type": "word",
+        "problem": "A sample of helium gas (He) occupies a volume of 2.0 L at a pressure of 1.0 atm and a temperature of 25 degrees Celsius. If the gas is heated to 100 degrees Celsius and its volume is allowed to expand to 3.0 L, calculate the new pressure of the gas in atm.",
+        "solution": "To calculate the new pressure of the gas, we can use the combined gas law, which takes into account changes in pressure, volume, and temperature. The combined gas law is given by the equation: (P1 * V1) / T1 = (P2 * V2) / T2. The initial pressure P1 is 1.0 atm, the initial volume V1 is 2.0 L, and the initial temperature T1 is 25 degrees Celsius. The final volume V2 is 3.0 L, and the final temperature T2 is 100 degrees Celsius. First, we need to convert the temperatures to Kelvin. Kelvin temperature = Celsius temperature + 273. So, the initial temperature in Kelvin is 25 + 273 = 298 K, and the final temperature in Kelvin is 100 + 273 = 373 K. Now, we can calculate the new pressure: P2 = (P1 * V1 * T2) / (V2 * T1) = (1.0 atm * 2.0 L * 373 K) / (3.0 L * 298 K) ≈ 1.25 atm. Therefore, the new pressure of the gas after heating and expansion is approximately 1.25 atm."
+      }
+    ]
+  }
+  

@@ -1,0 +1,55 @@
+{
+    "topic": "Literature",
+    "difficulty": 2,
+    "limitations": "No questions about contemporary literature (post-2000)",
+    "format": {
+      "wordProblems": 4,
+      "multipleChoiceProblems": 2
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "In Shakespeare's play 'Romeo and Juliet,' what are the names of the two feuding families?",
+        "solution": "In Shakespeare's play 'Romeo and Juliet,' the names of the two feuding families are the Montagues and the Capulets. The ongoing feud between these two families serves as a central conflict in the play."
+      },
+      {
+        "type": "word",
+        "problem": "Which classic novel by Jane Austen follows the life and romantic entanglements of the protagonist Elizabeth Bennet?",
+        "solution": "The classic novel by Jane Austen that follows the life and romantic entanglements of the protagonist Elizabeth Bennet is 'Pride and Prejudice.' The novel explores themes of love, societal expectations, and personal growth."
+      },
+      {
+        "type": "word",
+        "problem": "In George Orwell's dystopian novel '1984,' what is the totalitarian regime ruling the society called?",
+        "solution": "In George Orwell's dystopian novel '1984,' the totalitarian regime ruling the society is called the 'Party.' The Party is led by the enigmatic figure known as Big Brother and exercises total control over the lives of the citizens."
+      },
+      {
+        "type": "word",
+        "problem": "In Mark Twain's novel 'The Adventures of Huckleberry Finn,' who is the runaway slave who befriends Huck?",
+        "solution": "In Mark Twain's novel 'The Adventures of Huckleberry Finn,' the runaway slave who befriends Huck is named Jim. The novel explores themes of friendship, freedom, and the moral complexities of society."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following novels is authored by Harper Lee?",
+        "choices": [
+          "A. To Kill a Mockingbird",
+          "B. The Great Gatsby",
+          "C. The Catcher in the Rye",
+          "D. Lord of the Flies",
+          "E. 1984"
+        ],
+        "solution": "The novel authored by Harper Lee is A. To Kill a Mockingbird. It is a classic work of American literature that addresses issues of racial injustice and moral growth through the eyes of young protagonist Scout Finch."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which epic poem by Homer tells the story of the Trojan War and the Greek hero Odysseus' journey home?",
+        "choices": [
+          "A. The Aeneid",
+          "B. The Odyssey",
+          "C. The Iliad",
+          "D. Beowulf",
+          "E. The Divine Comedy"
+        ],
+        "solution": "The epic poem by Homer that tells the story of the Trojan War and the Greek hero Odysseus' journey home is B. The Odyssey. It is a foundational work in Western literature and follows Odysseus' adventures and challenges on his way back to Ithaca."
+      }
+    ]
+  }

@@ -1,0 +1,73 @@
+{
+    "topic": "Biology",
+    "difficulty": 4,
+    "limitations": "No problems about genetics",
+    "format": {
+      "wordProblems": 5,
+      "multipleChoiceProblems": 3
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "A population of rabbits initially consists of 100 individuals. In the first year, the population triples, and in the second year, it doubles. If this trend continues, what will be the size of the rabbit population after 5 years?",
+        "solution": "Let's denote the initial population as 'P'. After the first year, the population becomes 3P, and after the second year, it becomes 2(3P) = 6P. If this trend continues, after the third year, the population will be 2(6P) = 12P, and after the fourth year, it will be 2(12P) = 24P. Finally, after the fifth year, the population will be 2(24P) = 48P. Given that the initial population (P) is 100 individuals, the size of the rabbit population after 5 years will be 48P = 48 * 100 = 4800 individuals."
+      },
+      {
+        "type": "word",
+        "problem": "A pond contains 500 fish. If the fish population grows by 20% each year, how many fish will be in the pond after 3 years?",
+        "solution": "Let's denote the initial fish population as 'P'. After the first year, the population will be P + 0.20P = 1.20P. After the second year, it will be 1.20P + 0.20(1.20P) = 1.44P. After the third year, the population will be 1.44P + 0.20(1.44P) = 1.728P. Given that the initial population (P) is 500 fish, the number of fish in the pond after 3 years will be 1.728P = 1.728 * 500 = 864 fish."
+      },
+      {
+        "type": "word",
+        "problem": "A species of birds migrates to a new habitat. The initial population consists of 50 birds. If the population doubles every 5 years, how many birds will there be after 15 years?",
+        "solution": "Let's denote the initial bird population as 'P'. After 5 years, the population will be 2P. After 10 years, it will be 2(2P) = 4P. Finally, after 15 years, the population will be 2(4P) = 8P. Given that the initial population (P) is 50 birds, the number of birds after 15 years will be 8P = 8 * 50 = 400 birds."
+      },
+      {
+        "type": "word",
+        "problem": "In a wildlife reserve, the population of a certain animal species is declining by 10% each year. If there are currently 1000 animals in the reserve, how many will remain after 4 years?",
+        "solution": "Let's denote the initial animal population as 'P'. After the first year, the population will be P - 0.10P = 0.90P. After the second year, it will be 0.90P - 0.10(0.90P) = 0.81P. After the third year, the population will be 0.81P - 0.10(0.81P) = 0.729P. Finally, after the fourth year, the population will be 0.729P - 0.10(0.729P) = 0.6561P. Given that the initial population (P) is 1000 animals, the number of animals remaining after 4 years will be 0.6561P = 0.6561 * 1000 ≈ 656 animals."
+      },
+      {
+        "type": "word",
+        "problem": "A group of elephants is brought to a sanctuary. The initial group consists of 10 elephants. The sanctuary allows for the population to grow by 5% each year. After how many years will the elephant population reach 20?",
+        "solution": "Let's denote the initial elephant population as 'P'. After the first year, the population will be P + 0.05P = 1.05P. After the second year, it will be 1.05P + 0.05(1.05P) = 1.1025P. Continuing this pattern, after the third year, the population will be 1.1025P + 0.05(1.1025P) = 1.157625P. To find the number of years needed to reach 20 elephants, we set up the equation 1.157625P = 20 and solve for 'P'. P ≈ 17.29. Since the initial population (P) is 10 elephants, the elephant population will reach 20 after approximately 17 years."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following cell organelles is responsible for producing energy in the form of ATP?",
+        "choices": [
+          "A. Nucleus",
+          "B. Mitochondrion",
+          "C. Ribosome",
+          "D. Golgi Apparatus",
+          "E. Endoplasmic Reticulum"
+        ],
+        "solution": "The organelle responsible for producing energy in the form of ATP is B. Mitochondrion. Mitochondria are often referred to as the 'powerhouses' of the cell because they generate energy through cellular respiration."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following is the primary function of the chloroplast in plant cells?",
+        "choices": [
+          "A. Protein synthesis",
+          "B. Cellular respiration",
+          "C. Photosynthesis",
+          "D. Lipid synthesis",
+          "E. DNA replication"
+        ],
+        "solution": "The primary function of the chloroplast in plant cells is C. Photosynthesis. Chloroplasts are responsible for capturing light energy and converting it into chemical energy through the process of photosynthesis."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following is responsible for storing genetic information in eukaryotic cells?",
+        "choices": [
+          "A. Nucleus",
+          "B. Mitochondrion",
+          "C. Ribosome",
+          "D. Golgi Apparatus",
+          "E. Endoplasmic Reticulum"
+        ],
+        "solution": "The organelle responsible for storing genetic information in eukaryotic cells is A. Nucleus. The nucleus contains the cell's DNA, which carries the genetic instructions for cell growth, function, and reproduction."
+      }
+    ]
+  }
+  

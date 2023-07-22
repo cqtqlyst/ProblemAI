@@ -1,0 +1,67 @@
+{
+    "topic": "Physics",
+    "difficulty": 4,
+    "limitations": "No problems involving relativity",
+    "format": {
+      "mechanicsProblems": 5,
+      "electricityMagnetismProblems": 5
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "A ball is thrown horizontally from the top of a building with an initial velocity of 15 m/s. The building is 25 meters tall. How far from the base of the building will the ball land?",
+        "solution": "Since the ball is thrown horizontally, there is no initial vertical velocity. The only force acting on the ball in the horizontal direction is the constant horizontal velocity of 15 m/s. The time it takes for the ball to fall can be calculated using the equation h = (1/2)gt^2, where 'h' is the height of the building (25 meters) and 'g' is the acceleration due to gravity (approximately 9.8 m/s^2). Solving for 't', we get t = √(2h / g) = √(2 * 25 / 9.8) ≈ 3.19 seconds. Since the horizontal distance is given by d = vt, where 'v' is the horizontal velocity and 't' is the time, the horizontal distance is d = 15 m/s * 3.19 s ≈ 47.85 meters. Therefore, the ball will land approximately 47.85 meters from the base of the building."
+      },
+      {
+        "type": "word",
+        "problem": "A block of mass 2 kg is placed on a frictionless horizontal surface. A horizontal force of 10 N is applied to the block, accelerating it at 4 m/s^2. What is the coefficient of kinetic friction between the block and the surface?",
+        "solution": "The net force on the block is given by the equation F_net = ma, where 'F_net' is the net force, 'm' is the mass of the block, and 'a' is the acceleration. Since the surface is frictionless, the only force acting on the block is the applied force of 10 N. Therefore, F_net = 10 N. Plugging in the values, we get 10 N = 2 kg * 4 m/s^2. Solving for the coefficient of kinetic friction 'μ_k', we get μ_k = F_net / (m * g) = 10 N / (2 kg * 9.8 m/s^2) ≈ 0.51. Therefore, the coefficient of kinetic friction between the block and the surface is approximately 0.51."
+      },
+      {
+        "type": "word",
+        "problem": "A spring with a spring constant of 200 N/m is compressed by 0.1 meters. What is the potential energy stored in the spring?",
+        "solution": "The potential energy stored in a spring is given by the equation PE = (1/2)kx^2, where 'PE' is the potential energy, 'k' is the spring constant, and 'x' is the compression or extension of the spring. Plugging in the values, we get PE = (1/2) * 200 N/m * (0.1 m)^2 = (1/2) * 200 N/m * 0.01 m^2 = 1 Nm = 1 Joule. Therefore, the potential energy stored in the spring is 1 Joule."
+      },
+      {
+        "type": "word",
+        "problem": "A car traveling at a constant velocity of 20 m/s on a straight road comes to a complete stop in 10 seconds. What is the car's acceleration?",
+        "solution": "Acceleration is the rate of change of velocity. Since the car comes to a complete stop, its final velocity is 0 m/s. The initial velocity is 20 m/s, and the time taken to come to a stop is 10 seconds. The acceleration can be calculated using the equation a = (v_f - v_i) / t, where 'a' is the acceleration, 'v_f' is the final velocity, 'v_i' is the initial velocity, and 't' is the time. Plugging in the values, we get a = (0 m/s - 20 m/s) / 10 s = -20 m/s^2. Therefore, the car's acceleration is -20 m/s^2."
+      },
+      {
+        "type": "word",
+        "problem": "A block of mass 3 kg is hanging vertically from a rope. What is the tension in the rope if the block is in equilibrium?",
+        "solution": "In equilibrium, the net force and net torque on the block are zero. Since the block is not accelerating, the net force on the block is zero. The forces acting on the block are its weight (mg) and the tension in the rope (T). The weight of the block is given by mg = 3 kg * 9.8 m/s^2 ≈ 29.4 N. The tension in the rope can be calculated as T = mg = 29.4 N. Therefore, the tension in the rope is approximately 29.4 N."
+      },
+      {
+        "type": "word",
+        "problem": "A wire of length 2 meters carries a current of 5 Amperes. If a magnetic field of 0.3 Tesla is applied perpendicular to the wire, what is the magnitude and direction of the force on the wire?",
+        "solution": "The force on a current-carrying wire in a magnetic field is given by the equation F = BIL, where 'F' is the force, 'B' is the magnetic field strength, 'I' is the current, and 'L' is the length of the wire. Plugging in the values, we get F = 0.3 Tesla * 5 Amperes * 2 meters = 3 N. The magnitude of the force is 3 Newtons. The direction of the force can be determined using the right-hand rule. If you point your thumb in the direction of the current and your fingers in the direction of the magnetic field, the force on the wire is in the direction perpendicular to both your thumb and fingers. Therefore, the force on the wire is perpendicular to the magnetic field and the current, pointing out of the page."
+      },
+      {
+        "type": "word",
+        "problem": "Two point charges, +4 μC and -2 μC, are placed 3 meters apart. What is the magnitude and direction of the electric field at a point midway between the charges?",
+        "solution": "The electric field due to a point charge is given by the equation E = k * (q / r^2), where 'E' is the electric field strength, 'k' is Coulomb's constant (approximately 9 x 10^9 Nm^2/C^2), 'q' is the charge, and 'r' is the distance from the charge. The charges are opposite in sign, so the electric fields due to each charge point in opposite directions. The electric field at the midpoint between the charges is the vector sum of the two electric fields. The magnitude of the electric field at the midpoint can be calculated as E = k * (|+4 μC| / (1.5 meters)^2) - k * (|-2 μC| / (1.5 meters)^2) = k * (4 μC / 2.25 meters^2) + k * (2 μC / 2.25 meters^2) = (9 x 10^9 Nm^2/C^2) * (2 μC / 2.25 meters^2) = 8 x 10^9 N/C. The direction of the electric field at the midpoint is from the positive charge (+4 μC) to the negative charge (-2 μC). Therefore, the electric field at the midpoint is 8 x 10^9 N/C, directed from the positive charge to the negative charge."
+      },
+      {
+        "type": "word",
+        "problem": "A capacitor with a capacitance of 10 μF is connected to a 12 V battery. How much charge is stored on the capacitor?",
+        "solution": "The charge stored on a capacitor is given by the equation Q = CV, where 'Q' is the charge, 'C' is the capacitance, and 'V' is the voltage across the capacitor. Plugging in the values, we get Q = 10 μF * 12 V = 120 μC. Therefore, the charge stored on the capacitor is 120 microcoulombs."
+      },
+      {
+        "type": "word",
+        "problem": "A solenoid with 500 turns and a length of 0.2 meters is carrying a current of 2 Amperes. What is the magnitude and direction of the magnetic field inside the solenoid?",
+        "solution": "The magnetic field inside a solenoid can be calculated using the equation B = μ₀ * n * I, where 'B' is the magnetic field strength, 'μ₀' is the permeability of free space (approximately 4π x 10^-7 Tm/A), 'n' is the number of turns per unit length (500 turns / 0.2 meters = 2500 turns/meter), and 'I' is the current. Plugging in the values, we get B = (4π x 10^-7 Tm/A) * (2500 turns/meter) * 2 Amperes ≈ 0.01 Tesla. The direction of the magnetic field inside the solenoid is along the axis of the solenoid, pointing from the south pole to the north pole. Therefore, the magnitude of the magnetic field inside the solenoid is approximately 0.01 Tesla, and its direction is along the axis of the solenoid."
+      },
+      {
+        "type": "word",
+        "problem": "A charged particle with a mass of 2 x 10^-6 kg and a charge of +4 μC is released from rest in a uniform electric field of 100 N/C. How far will the particle travel horizontally before hitting the ground?",
+        "solution": "In the presence of an electric field, the charged particle experiences a force given by F = qE, where 'F' is the force, 'q' is the charge, and 'E' is the electric field strength. The force causes the particle to accelerate in the direction of the electric field. The horizontal motion of the particle is not affected by the electric field, so it remains at a constant horizontal velocity of 0 m/s. The vertical motion of the particle can be analyzed using the equation h = (1/2)gt^2, where 'h' is the height from which the particle is released (0 meters) and 'g' is the acceleration due to gravity (approximately 9.8 m/s^2). Solving for 't', we get t = √(2h / g) = √(2 * 0 / 9.8) = 0 seconds. The horizontal distance traveled by the particle is given by d = vt, where 'd' is the distance, 'v' is the horizontal velocity (0 m/s), and 't' is the time (0 seconds). Therefore, the particle will not travel horizontally before hitting the ground."
+      },
+      {
+        "type": "word",
+        "problem": "An object is placed 2 meters in front of a converging lens with a focal length of 0.5 meters. Calculate the image distance and determine if the image is real or virtual.",
+        "solution": "The thin lens equation relates the object distance (d_o), the image distance (d_i), and the focal length (f) of a lens: 1/f = 1/d_o + 1/d_i. Plugging in the values, we get 1/0.5 = 1/2 + 1/d_i. Solving for d_i, we get d_i = 1 / (1/0.5 - 1/2) = 1 / (2 - 1) = 1 meter. The positive image distance indicates that the image is formed on the same side as the object, which means the image is virtual. Therefore, the image distance is 1 meter, and the image is virtual."
+      }
+    ]
+  }
+  

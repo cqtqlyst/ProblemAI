@@ -1,0 +1,57 @@
+{
+    "topic": "Chemistry",
+    "difficulty": 4,
+    "limitations": "No questions about organic chemistry reactions",
+    "format": {
+      "wordProblems": 2,
+      "multipleChoiceProblems": 3
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "A chemical reaction between sodium chloride (NaCl) and silver nitrate (AgNO3) results in the formation of a precipitate. Write the balanced chemical equation for this reaction and identify the precipitate formed.",
+        "solution": "The balanced chemical equation for the reaction between sodium chloride (NaCl) and silver nitrate (AgNO3) is: NaCl + AgNO3 → AgCl + NaNO3. The precipitate formed in this reaction is silver chloride (AgCl)."
+      },
+      {
+        "type": "word",
+        "problem": "Calculate the molarity of a solution containing 0.5 moles of potassium chloride (KCl) dissolved in 500 mL of water.",
+        "solution": "To calculate the molarity of the solution, we use the formula: Molarity (M) = moles of solute / volume of solution in liters. Given that the moles of potassium chloride (KCl) is 0.5 moles and the volume of the solution is 500 mL (0.5 liters), we get: Molarity (M) = 0.5 moles / 0.5 liters = 1 M. Therefore, the molarity of the solution is 1 M."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following is NOT a state of matter?",
+        "choices": [
+          "A. Solid",
+          "B. Liquid",
+          "C. Gas",
+          "D. Plasma",
+          "E. Energy"
+        ],
+        "solution": "The correct answer is E. Energy. Energy is not a state of matter; it is a property or quantity that can exist in various forms (e.g., kinetic energy, potential energy) in any state of matter."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "Which of the following elements is a noble gas?",
+        "choices": [
+          "A. Oxygen",
+          "B. Nitrogen",
+          "C. Helium",
+          "D. Carbon",
+          "E. Hydrogen"
+        ],
+        "solution": "The noble gas among the given elements is C. Helium. Noble gases, also known as inert gases, are located in Group 18 of the periodic table and include helium, neon, argon, krypton, xenon, and radon."
+      },
+      {
+        "type": "multipleChoice",
+        "problem": "The pH scale is used to measure the acidity or basicity of a substance. A pH value of 7 indicates that the substance is:",
+        "choices": [
+          "A. Neutral",
+          "B. Acidic",
+          "C. Basic",
+          "D. Alkaline",
+          "E. Reactive"
+        ],
+        "solution": "The correct answer is A. Neutral. A pH value of 7 on the pH scale indicates that the substance is neutral, meaning it is neither acidic nor basic. pH values below 7 indicate acidity, while pH values above 7 indicate basicity."
+      }
+    ]
+  }

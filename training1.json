@@ -1,0 +1,107 @@
+{
+  "topic": "APCalculusBC",
+  "difficulty": 5,
+  "limitations": "No problems about trigonometry",
+  "format": {
+    "wordProblems": 4,
+    "multipleChoiceProblems": 6
+  },
+  "problems": [
+    {
+      "type": "word",
+      "problem": "A ladder is leaning against a vertical wall. The base of the ladder is 6 feet away from the wall, and the top of the ladder reaches a height of 8 feet above the ground. How long is the ladder?",
+      "solution": "The ladder, the distance from the base to the wall, and the height above the ground form a right-angled triangle. We can use the Pythagorean theorem to find the length of the ladder. Let 'x' be the length of the ladder. Then, according to the Pythagorean theorem, we have x^2 = 6^2 + 8^2. Solving for 'x', we get x = √(6^2 + 8^2) = √(36 + 64) = √100 = 10 feet. Therefore, the length of the ladder is 10 feet."
+    },
+    {
+      "type": "word",
+      "problem": "A water tank has the shape of a right circular cylinder. The height of the tank is 10 meters, and the radius of the base is 4 meters. How much water (in cubic meters) can the tank hold?",
+      "solution": "The volume of a right circular cylinder is given by V = πr^2h, where 'r' is the radius and 'h' is the height. Plugging in the values, we get V = π(4^2)(10) = π(16)(10) = 160π cubic meters. Since the value of π is approximately 3.14159, we can calculate the volume as approximately 160 * 3.14159 ≈ 502.65 cubic meters. Therefore, the tank can hold approximately 502.65 cubic meters of water."
+    },
+    {
+      "type": "word",
+      "problem": "A baseball is hit from a height of 3 feet above the ground with an initial velocity of 90 feet per second at an angle of 30 degrees above the horizontal. How far will the baseball travel horizontally before hitting the ground?",
+      "solution": "We can analyze the horizontal and vertical motion of the baseball separately. The horizontal motion is not affected by gravity and remains at a constant velocity of 90 cos(30) = 77.94 feet per second. The time it takes for the baseball to hit the ground can be found using the vertical motion. Let 't' be the time of flight. The vertical motion is given by h(t) = -16t^2 + 90 sin(30) * t + 3, where 'h' is the height above the ground. The baseball hits the ground when h(t) = 0. Solving for 't', we get t ≈ 5.5 seconds. The horizontal distance traveled is given by distance = horizontal velocity * time of flight = 77.94 * 5.5 ≈ 428.67 feet. Therefore, the baseball will travel approximately 428.67 feet horizontally before hitting the ground."
+    },
+    {
+      "type": "word",
+      "problem": "A conical tank is being filled with water. The tank has a height of 12 meters and a base radius of 6 meters. Water is being pumped into the tank at a constant rate of 5 cubic meters per minute. Find the rate at which the water level is rising when the water is 8 meters deep.",
+      "solution": "The volume V of a cone is given by V = (1/3)πr^2h, where 'r' is the radius and 'h' is the height. We are given that the rate at which the volume is changing is dV/dt = 5 cubic meters per minute, and we need to find the rate at which the water level is rising (dh/dt) when h = 8 meters. Differentiating the volume equation with respect to time 't', we get dV/dt = (1/3)π(2r)(h(dr/dt) + r^2(dh/dt)). Since the tank is being filled, dh/dt is positive, and dr/dt = 0 because the base radius is not changing. Plugging in the values, we get 5 = (1/3)π(2*6)(8*(dh/dt) + 6^2(0)). Solving for dh/dt, we find dh/dt ≈ 0.0344 meters per minute. Therefore, the water level is rising at a rate of approximately 0.0344 meters per minute when the water is 8 meters deep."
+    },
+    {
+      "type": "multipleChoice",
+      "problem": "What is the sum of the infinite geometric series: 3 + 1 + (1/3) + (1/9) + ...?",
+      "choices": [
+        "A. 4",
+        "B. 3",
+        "C. 2.5",
+        "D. 2",
+        "E. The sum diverges to infinity"
+      ],
+      "solution": "To find the sum of an infinite geometric series, we use the formula S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. In this series, the first term 'a' is 3, and the common ratio 'r' is 1/3. Plugging in the values, we get S = 3 / (1 - 1/3) = 3 / (2/3) = 3 * (3/2) = 9/2 = 4.5. Therefore, the sum of the infinite geometric series is 4.5. The correct answer is E."
+    },
+    {
+      "type": "multipleChoice",
+      "problem": "An object is thrown vertically upward with an initial velocity of 30 meters per second. The height of the object above the ground after 't' seconds is given by the function h(t) = 30t - 4.9t^2. How long does it take for the object to reach its highest point?",
+      "choices": [
+        "A. 1.53 seconds",
+        "B. 3.06 seconds",
+        "C. 4.59 seconds",
+        "D. 6.12 seconds",
+        "E. None of the above"
+      ],
+      "solution": "To find the time it takes for the object to reach its highest point, we need to find the vertex of the parabolic function h(t) = 30t - 4.9t^2. The vertex of a parabola in the form y = ax^2 + bx + c is given by the formula t = -b / (2a). In this case, a = -4.9 and b = 30. Plugging in these values, we get t = -30 / (2*(-4.9)) ≈ 3.06 seconds. Therefore, it takes the object approximately 3.06 seconds to reach its highest point. The correct answer is B."
+    },
+    {
+      "type": "multipleChoice",
+      "problem": "What is the curl of the vector field F(x, y, z) = 2yzi - xzj + xyk?",
+      "choices": [
+        "A. 2xi + yj + zk",
+        "B. xi + 2yj + zk",
+        "C. xi + yj + 2zk",
+        "D. 2xi + 2yj + 2zk",
+        "E. None of the above"
+      ],
+      "solution": "The curl of a vector field F = Pi + Qj + Rk is given by the determinant of the following matrix: curl(F) = ∇ x F = i(det|d/dx   d/dy   d/dz| - j(det|d/dx   d/dy   d/dz|) + k(det|d/dx   d/dy   d/dz|), where ∇ is the del operator. For the given vector field F(x, y, z) = 2yzi - xzj + xyk, we have ∇ x F = i(det|d/dx(2yz)   d/dy(2yz)   d/dz(2yzi) - j(det|d/dx(2yz)   d/dy(-xz)   d/dz(2yzi)|) + k(det|d/dx(2yzi)   d/dy(-xz)   d/dz(xyk)|). Simplifying the determinants and partial derivatives, we get ∇ x F = (2y - (-z))i + (2z - 0)j + (2x - y)k = 2y + zi + 2zj + (2x - y)k. Therefore, the curl of the vector field is 2y + zi + 2zj + (2x - y)k. The correct answer is E."
+    },
+    {
+      "type": "multipleChoice",
+      "problem": "What is the derivative of the function f(x) = ln(x^2 + 1)?",
+      "choices": [
+        "A. 2x / (x^2 + 1)",
+        "B. (2x + 1) / (x^2 + 1)",
+        "C. 2x / (x^2)",
+        "D. 2x / (x^2 - 1)",
+        "E. None of the above"
+      ],
+      "solution": "To find the derivative of the function f(x) = ln(x^2 + 1), we use the chain rule. The chain rule states that if we have a composite function u(v(x)), then the derivative with respect to 'x' is given by du/dx = du/dv * dv/dx. In this case, u(v) = ln(v) and v(x) = x^2 + 1. The derivative of ln(v) with respect to 'v' is 1/v, and the derivative of v(x) with respect to 'x' is 2x. Plugging in these values, we get df/dx = (1/(x^2 + 1)) * (2x) = 2x / (x^2 + 1). Therefore, the derivative of the function is A. The correct answer is A."
+    },
+    {
+      "type": "multipleChoice",
+      "problem": "Which of the following matrices is not invertible?",
+      "choices": [
+        "A. | 3  1 |",
+        "     | 2  4 |",
+        "B. | 2  0 |",
+        "     | 0  2 |",
+        "C. | 1  2 |",
+        "     | 2  4 |",
+        "D. | 1  2 |",
+        "     | 3  6 |",
+        "E. All of the above are invertible"
+      ],
+      "solution": "A matrix is invertible (or non-singular) if its determinant is non-zero. To determine which matrix is not invertible, we calculate the determinant of each matrix. (A) det| 3  1 | = (3*4) - (1*2) = 12 - 2 = 10, which is non-zero, so matrix A is invertible. (B) det| 2  0 | = (2*2) - (0*0) = 4, which is non-zero, so matrix B is invertible. (C) det| 1  2 | = (1*4) - (2*2) = 4 - 4 = 0, which is zero, so matrix C is not invertible. (D) det| 1  2 | = (1*6) - (2*3) = 6 - 6 = 0, which is zero, so matrix D is not invertible. Therefore, the correct answer is E."
+    },
+    {
+      "type": "multipleChoice",
+      "problem": "What is the Maclaurin series expansion of the function f(x) = e^x?",
+      "choices": [
+        "A. 1 + x + (1/2)x^2 + (1/6)x^3 + ...",
+        "B. 1 + x + x^2 + x^3 + ...",
+        "C. 1 + x + (1/2)x^2 + (1/3)x^3 + ...",
+        "D. 1 + (1/2)x + (1/6)x^2 + (1/24)x^3 + ...",
+        "E. None of the above"
+      ],
+      "solution": "The Maclaurin series expansion of the function e^x is given by the formula f(x) = 1 + x + (1/2)x^2 + (1/6)x^3 + ..., where the coefficients are derived from the derivatives of e^x evaluated at x = 0. Therefore, the Maclaurin series expansion of the function is A. The correct answer is A."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+    "topic": "Biology",
+    "difficulty": 4,
+    "limitations": "No problems involving human anatomy",
+    "format": {
+      "geneticsProblems": 3,
+      "ecologyProblems": 2,
+      "cellBiologyProblems": 2,
+      "evolutionProblems": 1
+    },
+    "problems": [
+      {
+        "type": "word",
+        "problem": "In pea plants, the allele for tall height (T) is dominant over the allele for short height (t). If a heterozygous pea plant (Tt) is crossed with a homozygous recessive plant (tt), what is the probability that their offspring will be tall?",
+        "solution": "When crossing a heterozygous individual (Tt) with a homozygous recessive individual (tt), the Punnett square can be used to determine the possible genotypes of the offspring. The possible genotypes are Tt (tall) and tt (short). Since the T allele is dominant, all Tt offspring will be tall. The probability of getting a tall offspring is 1 (100%)."
+      },
+      {
+        "type": "word",
+        "problem": "In a population of rabbits, some individuals have brown fur (BB or Bb) and some have white fur (bb). If the frequency of the brown allele (B) is 0.7, what is the frequency of the white allele (b) in the population?",
+        "solution": "In a population, the frequencies of all alleles must add up to 1 (100%). The frequency of the brown allele (B) is given as 0.7. To find the frequency of the white allele (b), we subtract the frequency of B from 1: frequency of b = 1 - 0.7 = 0.3 (30%). Therefore, the frequency of the white allele (b) in the population is 0.3 or 30%."
+      },
+      {
+        "type": "word",
+        "problem": "A certain species of birds exhibits two distinct beak shapes: wide and narrow. If the wide beak is controlled by a dominant allele (W) and the narrow beak by a recessive allele (w), what is the expected genotypic ratio in the offspring of two heterozygous birds (Ww) when they breed?",
+        "solution": "When two heterozygous individuals (Ww x Ww) breed, the Punnett square can be used to determine the possible genotypes of the offspring. The possible genotypes are WW (wide beak), Ww (wide beak), and ww (narrow beak). The genotypic ratio can be represented as WW : Ww : ww. Since both WW and Ww genotypes result in a wide beak, the genotypic ratio for wide beaks is 2 (WW) : 2 (Ww). The genotypic ratio for narrow beaks is 1 (ww). Therefore, the expected genotypic ratio in the offspring is 2 : 2 : 1 (WW : Ww : ww) for wide beaks : wide beaks : narrow beaks."
+      },
+      {
+        "type": "word",
+        "problem": "In an ecosystem, the population of a predator species has increased significantly. As a result, the population of its prey species has decreased. Describe the ecological relationship between the predator and prey species.",
+        "solution": "The ecological relationship between the predator and prey species is a classic example of a predator-prey relationship. In this relationship, the predator species hunts and consumes the prey species for food. The increase in the predator population leads to more predation on the prey species, causing a decrease in the prey population. As the prey population decreases, the predator population may decrease due to a decrease in food availability. This relationship often leads to fluctuations in the populations of both species over time, as the abundance of one species affects the abundance of the other. It is an essential mechanism in maintaining the balance of ecosystems."
+      },
+      {
+        "type": "word",
+        "problem": "A population of rabbits lives in a forest. Some rabbits have a brown coat color, while others have a white coat color. During winter, the white rabbits are more difficult for predators to spot, giving them a survival advantage. What type of natural selection is likely occurring in this population?",
+        "solution": "In this population of rabbits, the white coat color provides a survival advantage during winter, making it more likely for white rabbits to survive and reproduce. This scenario describes directional selection, where a particular trait (white coat color) becomes more prevalent in the population over time because it offers a selective advantage under specific environmental conditions (winter camouflage). As white rabbits survive and reproduce more successfully than brown rabbits during winter, the frequency of the white coat color allele increases in the population over generations."
+      },
+      {
+        "type": "word",
+        "problem": "In a prokaryotic cell, what is the function of the ribosomes?",
+        "solution": "In a prokaryotic cell, the ribosomes are responsible for protein synthesis. They are the cellular structures where translation occurs, converting the genetic information carried by messenger RNA (mRNA) into polypeptide chains, which eventually fold into functional proteins. Ribosomes are essential for the cell's ability to produce the proteins required for various cellular processes and functions."
+      },
+      {
+        "type": "word",
+        "problem": "In a eukaryotic cell, what is the function of the mitochondria?",
+        "solution": "In a eukaryotic cell, the mitochondria are often referred to as the 'powerhouses' of the cell. Their main function is to produce adenosine triphosphate (ATP) through cellular respiration, a process that converts energy from nutrients into a usable form for the cell. ATP is the primary energy currency of the cell, and it provides energy for various cellular activities, including metabolism, active transport, and cell division. Mitochondria are crucial for the cell's ability to generate energy and carry out its functions."
+      },
+      {
+        "type": "word",
+        "problem": "During the process of meiosis, what is the significance of crossing-over?",
+        "solution": "Crossing-over is a significant event that occurs during meiosis, specifically in the prophase I of meiosis I. It involves the exchange of genetic material between homologous chromosomes. This exchange creates genetic diversity by shuffling the alleles on each chromosome. As a result, the offspring produced from meiosis inherit a unique combination of alleles from both parents. Crossing-over contributes to genetic variation, which is essential for the adaptation and evolution of populations. It also ensures that each gamete (egg or sperm cell) carries a different set of genetic information, increasing the diversity of offspring."
+      },
+      {
+        "type": "word",
+        "problem": "Which type of reproductive isolation prevents two closely related species of birds from interbreeding even when their ranges overlap?",
+        "solution": "The type of reproductive isolation that prevents two closely related species of birds from interbreeding, even when their ranges overlap, is called behavioral isolation. Behavioral isolation occurs when there are differences in courtship rituals, mating calls, or other behaviors between the two species. These differences in behavior can lead to individuals of the two species not recognizing each other as potential mates. As a result, they are less likely to interbreed, even if they share the same geographical area. Behavioral isolation is one of the mechanisms that contribute to maintaining species boundaries and promoting speciation."
+      },
+      {
+        "type": "word",
+        "problem": "What is the principle of common descent in the context of evolution?",
+        "solution": "The principle of common descent is a fundamental concept in the theory of evolution. It states that all living organisms on Earth are descended from a common ancestor or a group of common ancestors. According to this principle, the diversity of life seen today has arisen through a branching pattern of evolution, where species gradually diversify and evolve from a shared ancestral population over geological time. The evidence for common descent comes from various sources, including comparative anatomy, molecular biology, and the fossil record. The principle of common descent provides a unifying framework to understand the relationships between different species and their evolutionary history."
+      }
+    ]
+  }
+  
