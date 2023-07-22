@@ -32,7 +32,8 @@ pipe.enable_attention_slicing()
 
 # pipe.load_textual_inversion("./dkjkd.pt")
 
-prompt = "a mathematical geometric diagram of a right triangle with angles 30, 60, and 90 clearly labelled with black lines making up the triangle and pure white in the background"
+prompt = "A right triangle"
+#prompt = "a mathematical geometric diagram of a right triangle with angles 30, 60, and 90 clearly labelled with black lines making up the triangle and pure white in the background"
 
 # First-time "warmup" pass if PyTorch version is 1.13 (see explanation above)
 _ = pipe(prompt, num_inference_steps=1)
