@@ -20,25 +20,27 @@ image.save("astronaut_rides_horse.png")
 '''
 
 # apple silicon code
-from diffusers import DiffusionPipeline
 
-device = "mps"
+def make_image():
+    from diffusers import DiffusionPipeline
 
-pipe = DiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5")
-pipe = pipe.to(device)
+    device = "mps"
 
-# Recommended if your computer has < 64 GB of RAM
-pipe.enable_attention_slicing()
+    pipe = DiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5")
+    pipe = pipe.to(device)
 
-# pipe.load_textual_inversion("./dkjkd.pt")
+    # Recommended if your computer has < 64 GB of RAM
+    pipe.enable_attention_slicing()
 
-prompt = "A right triangle"
-#prompt = "a mathematical geometric diagram of a right triangle with angles 30, 60, and 90 clearly labelled with black lines making up the triangle and pure white in the background"
+    # pipe.load_textual_inversion("./dkjkd.pt")
 
-# First-time "warmup" pass if PyTorch version is 1.13 (see explanation above)
-_ = pipe(prompt, num_inference_steps=1)
+    prompt = "A right triangle"
+    #prompt = "a mathematical geometric diagram of a right triangle with angles 30, 60, and 90 clearly labelled with black lines making up the triangle and pure white in the background"
 
-# Results match those from the CPU device after the warmup pass.
-image = pipe(prompt).images[0]
+    # First-time "warmup" pass if PyTorch version is 1.13 (see explanation above)
+    _ = pipe(prompt, num_inference_steps=1)
 
-image.save("testimage3.png")
+    # Results match those from the CPU device after the warmup pass.
+    image = pipe(prompt).images[0]
+
+    image.save("displayed_image.png")
