@@ -107,14 +107,14 @@ pipe.load_lora_weights("30-60-90 triangle.safetensors")
 
 #pipe = load_lora_weights(pipe, "30-60-90 triangle.safetensors")
 
-prompt = "very clear and obvious mathematical geometric diagram of a right_triangle 30-60-90 triangle with angles of 90 degrees, 60 degrees, and 30 degrees"
+prompt = "right_triangle 30-60-90 triangle with angles of 90 degrees, 60 degrees, and 30 degrees"
 #prompt = "a mathematical geometric diagram of a right triangle with angles 30, 60, and 90 clearly labelled with black lines making up the triangle and pure white in the background"
 
 # First-time "warmup" pass if PyTorch version is 1.13 (see explanation above)
 # _ = pipe(prompt, num_inference_steps=1)
 
 # Results match those from the CPU device after the warmup pass.
-image = pipe(prompt, num_inference_steps=25, guidance_scale=7.5, cross_attention_kwargs={"scale": 1}).images[0]
+image = pipe(prompt, num_inference_steps=25, guidance_scale=7.5, cross_attention_kwargs={"scale": 0.99}).images[0]
 
 image.save("displayed_image4.png")
 
