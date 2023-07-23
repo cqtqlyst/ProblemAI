@@ -1,12 +1,11 @@
-//
 //  ContentView.swift
 //  ProblemAI
 //
 //  Created by Nikhil Krishnaswamy on 7/21/23.
 //
-
 import SwiftUI
-import CoreData
+import NVActivityIndicatorView
+import PDFKit
 
 struct LogoView: View {
     var body: some View {
@@ -24,16 +23,20 @@ struct MainView: View {
     @State private var topic: String = ""
     @State private var difficultyValue: Double = 3
     @State private var limitations: String = ""
-    @State private var numberOfProblems: Int = 5 // Default number of problems is set to 1
+    @State private var numberOfProblems: Int = 5
     @State private var outputText: String = ""
+    @State private var outputanswers: String = ""
     @State private var prompt: String = ""
-    @StateObject private var viewModel = ViewModel() // Create an instance of ViewModel
+    @ObservedObject private var viewModel = ViewModel()
+    @State private var allQuestionsGenerated = false
+
+    
     var body: some View {
             ZStack {
-                Color.black.edgesIgnoringSafeArea(.all) // Set the main background color to black
+                Color.black.edgesIgnoringSafeArea(.all)
                 
                 HStack(spacing: 20) {
-                    Spacer() // Push the input section to the center
+                    Spacer()
                     VStack(alignment: .leading, spacing: 20) {
                         LogoView()
                         
@@ -51,7 +54,7 @@ struct MainView: View {
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .foregroundColor(.white)
                             HStack {
-                                Text("Prompt") // Display "Prompt" label
+                                Text("Prompt")
                                     .font(.title2)
                                     .padding(10)
                                 Spacer()
@@ -60,7 +63,7 @@ struct MainView: View {
                                 .padding(10)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .foregroundColor(.white)
-                            // Replace the TextField with a Slider for difficulty
+                            
                             VStack {
                                 HStack{
                                     Text("Difficulty: \(Int(difficultyValue))/5")
@@ -71,7 +74,7 @@ struct MainView: View {
                                 }
                                 
                                 // Display the current value of the slider
-                                Slider(value: $difficultyValue, in: 1...5, step: 1) // Use a range of 1 to 10 for the difficulty
+                                Slider(value: $difficultyValue, in: 1...5, step: 1)
                                     .padding(10)
                                     .foregroundColor(.white)
                                     .font(.system(size : 10))
@@ -92,43 +95,92 @@ struct MainView: View {
                             Stepper("Number of Problems: \(numberOfProblems)", value: $numberOfProblems, in: 1...10)
                                 .padding(10)
                                 .foregroundColor(.white)
+                                .font(.title2)
                             
                             Button(action: processPrompt) {
                                 Image(systemName: "pencil.and.outline")
                                     .padding(10)
                                     .cornerRadius(20)
+                                    
                             }
                             .background(Color.blue.opacity(0.2))
                             .padding(.top)
                             .padding(.bottom)
+                            
                         }
+                        .background(Color.black.opacity(0.2))
                         .padding()
                         
                         Spacer()
                     }
-                    .frame(width: 500) // Set a fixed width for the input section
+                    .frame(width: 500)
                     .foregroundColor(.white)
-                    .background(Color.black) // Set the input section background to black
+                    .background(Color.black)
                     
-                    Spacer() // Push the input section to the center
+                    Spacer()
 
                     Divider()
-
-                    ScrollView {
-                        Text(outputText)
-                               .padding()
+                    
+                    VStack(spacing: 20){
+                        Spacer()
+                        ScrollView {
+                            Spacer()
+                            ForEach(outputText.split(separator: "\n"), id: \.self) { line in
+                                if let label = line.first {
+                                    let text = line.dropFirst().trimmingCharacters(in: .whitespacesAndNewlines)
+                                    if label == "Q" {
+                                        Text(text)
+                                            .foregroundColor(.white)
+                                            .padding()
+                                            .frame(maxWidth: .infinity, alignment: .leading)
+                                            .background(Color.gray.opacity(0.3))
+                                            .cornerRadius(15)
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 15)
+                                                    .stroke(Color.white, lineWidth: 1)
+                                            )
+                                            .multilineTextAlignment(.leading)
+                                    } else if label == "A" {
+                                        Text(text)
+                                            .foregroundColor(.white)
+                                            .padding()
+                                            .frame(maxWidth: .infinity, alignment: .leading)
+                                            .background(Color.blue.opacity(0.4))
+                                            .cornerRadius(15)
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 15)
+                                                    .stroke(Color.white, lineWidth: 1)
+                                            )
+                                            .multilineTextAlignment(.leading)
+                                    }
+                                }
+                            }
+                            .padding(.horizontal)
+                            
+                            Button(action: {
+                                createPDF(questions: outputText.split(separator: "\n").map { String($0) })
+                            }) {
+                                Text("Create PDF")
+                                    .padding(10)
+                                    .cornerRadius(20)
+                                    .background(Color.green.opacity(0.6))
+                                    .cornerRadius(10)
+                                    .opacity(allQuestionsGenerated ? 1.0 : 0.0)
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                            .background(Color.black)
+                            .padding(20)
+                        }
+                        .padding(.horizontal, 20)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                     }
-                    .frame(minWidth: 400) // Set a fixed width for the output section
-                    .foregroundColor(.white) // Set text color to yellow
-                    .background(Color.black) // Set the output section background to black
                 }
             }
-            .frame(minWidth: 1000, minHeight: 800) // Set the default size for the desktop app
+            .frame(minWidth: 1000, minHeight: 800)
+            
         }
-
-
     private func processPrompt() {
-        // Concatenate all parameters into a single input string, including the difficultyValue and prompt.
+        
         let inputString = """
             Prompt: \(prompt)
             Topic: \(topic)
@@ -138,64 +190,106 @@ struct MainView: View {
         """
         
         viewModel.getOpenAIResponse(input: inputString) { output in
-            // Update the outputText state variable with the generated output
+            
             outputText = output
+            allQuestionsGenerated = true
+            
+        }
+        
+        
+    }
+    
+    private func createPDF(questions: [String], fontSize: CGFloat = 12) {
+        let pdfDocument = PDFDocument()
+        
+        for question in questions {
+            let pdfPage = PDFPage()
+
+            let textAnnotation = PDFAnnotation(bounds: CGRect(x: 50, y: 620, width: 400, height: 100), forType: .freeText, withProperties: nil)
+            textAnnotation.contents = question
+            textAnnotation.font = NSFont.systemFont(ofSize: fontSize)
+            textAnnotation.backgroundColor = NSColor.white
+            textAnnotation.color = NSColor.white
+            pdfPage.addAnnotation(textAnnotation)
+
+            pdfDocument.insert(pdfPage, at: pdfDocument.pageCount)
+        }
+
+        let savePanel = NSSavePanel()
+        savePanel.allowedContentTypes = [.pdf]
+
+        savePanel.begin { result in
+            if result == NSApplication.ModalResponse.OK {
+                guard let fileURL = savePanel.url else {
+                    print("Error: Unable to get file URL.")
+                    return
+                }
+
+                pdfDocument.write(to: fileURL)
+            }
         }
     }
+
 }
+
 
 struct HowToUseView: View {
     var body: some View {
         VStack{
             LogoView()
             Text("""
-    Fill in the input fields based on user preferences.
-    After output is generated, choose to lock the individual problem.
-    After all preferred problems are locked, click the dice or reroll button to generate the other problems.
-    Once all preferred problems have been achieved click the check button to finish.
-    The pdf file will be ready to view and download or export.
+    At its core, problem.ai is an AI-powered platform designed to streamline the studying experience for both students and teachers. The user interface design was methodically crafted to provide an intuitive and seamless experience for users. It incorporates a series of input fields that solicit prompt information from the user, enabling them to specify their preferences and requirements. This prompt information is then efficiently processed and fed into a sophisticated and fine-tuned model, which employs advanced algorithms to generate a diverse range of problems tailored precisely to the user's desires. These generated problems are elegantly presented on the user interface, providing a visually engaging and informative display. Moreover, to enhance usability and flexibility, the app allows users  to export the generated problems as editable PDF files. This feature enables users to customize the problems according to their preferences, should they wish to make any adjustments or additions. By seamlessly combining intuitive input mechanisms, cutting-edge algorithms, and an export functionality, the app ensures an enriching and user-centric problem generation experience.
 """)
         }
+        .multilineTextAlignment(.leading)
         
             .foregroundColor(.white)
-            .padding()
+            .padding(.all)
+            
     }
 }
 
 struct AboutUsView: View {
     var body: some View {
-        Text("This is the About Us page")
+        Text("""
+We intend to add features like image generation, problem-to-problem generation, a view for replacing a singluar question if the user doesnt like it, a button to show answers, and implement a more versatile pdf editor.
+""")
             .foregroundColor(.white)
             .padding()
     }
 }
-
 struct ContentView: View {
     @State private var selectedTab = 0
 
     var body: some View {
-         // Wrap the content in a NavigationView
             VStack {
                 HStack {
-                    VStack(spacing: 20) {
-                        Image(systemName: "house.fill")
-                            .font(.system(size: 18))
-                            
-                            .foregroundColor(selectedTab == 0 ? .yellow : .gray)
+                    VStack(alignment: .leading, spacing: 20) {
+                        HStack{
+                            Image(systemName: "house.fill")
+                                .font(.system(size: 18))
+                                .foregroundColor(selectedTab == 0 ? .yellow : .gray)
+                            Text("Home")
+                        }.multilineTextAlignment(.leading)
                             .onTapGesture {
                                 selectedTab = 0
                             }
-                        Image(systemName: "questionmark.circle.fill")
-                            .font(.system(size: 18))
-                            
-                            .foregroundColor(selectedTab == 1 ? .orange : .gray)
+                        HStack{
+                            Image(systemName: "questionmark.circle.fill")
+                                .font(.system(size: 18))
+                                .foregroundColor(selectedTab == 1 ? .orange : .gray)
+                            Text("How to Use")
+                        }.multilineTextAlignment(.leading)
                             .onTapGesture {
                                 selectedTab = 1
                             }
-                        Image(systemName: "person.fill")
-                            .font(.system(size: 18))
-                            
-                            .foregroundColor(selectedTab == 2 ? .red : .gray)
+                        HStack{
+                            Image(systemName: "wand.and.stars.inverse")
+                                .font(.system(size: 18))
+                                .foregroundColor(selectedTab == 2 ? .red : .gray)
+                            Text("Beta")
+                        }.multilineTextAlignment(.leading)
+                        
                             .onTapGesture {
                                 selectedTab = 2
                             }
@@ -206,7 +300,6 @@ struct ContentView: View {
 
                     Divider()
 
-                    // Use a Group to show the selected view with a background color
                     Group {
                         if selectedTab == 0 {
                             MainView()
@@ -215,7 +308,7 @@ struct ContentView: View {
                         } else if selectedTab == 2 {
                             AboutUsView()
                         } else {
-                            MainView() // Default selection
+                            MainView()
                         }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -223,10 +316,8 @@ struct ContentView: View {
                 }
                 Spacer()
             }
-             // Set the navigation bar display mode to inline
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.black.edgesIgnoringSafeArea(.all))
-        
     }
 }
 
