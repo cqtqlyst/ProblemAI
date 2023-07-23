@@ -1,0 +1,2 @@
+right_triangle with angle 90 degrees, 30 degrees, and 60 degrees the side lengths of sqrt(3)x, 2x, and x
+

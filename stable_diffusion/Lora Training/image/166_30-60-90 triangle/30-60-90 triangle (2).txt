@@ -1,0 +1,1 @@
+right_triangle with angles of 90, 30, and 60 degrees

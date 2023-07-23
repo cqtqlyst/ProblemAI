@@ -1,0 +1,1 @@
+right_triangle with angles of 30 degrees, 90 degrees, and 60 degrees, and side lengths of sqrt(3), 1, and 2
