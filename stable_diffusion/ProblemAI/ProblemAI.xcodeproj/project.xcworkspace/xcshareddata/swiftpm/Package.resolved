@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "nvactivityindicatorview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ninjaprox/NVActivityIndicatorView.git",
+      "state" : {
+        "revision" : "bcb52371f2259254bac6690f92bb474a61768c47",
+        "version" : "5.1.1"
+      }
+    },
+    {
+      "identity" : "openaiswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/adamrushy/OpenAISwift",
+      "state" : {
+        "revision" : "aeb19b0d5739fd6e3f568ccdb93376827e3cde0e",
+        "version" : "1.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

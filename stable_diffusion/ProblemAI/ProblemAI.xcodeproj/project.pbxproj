@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		457888E12A6CA47B00BF363B /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 457888E02A6CA47B00BF363B /* OpenAISwift */; };
+		457888E42A6D0D0000BF363B /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 457888E32A6D0D0000BF363B /* NVActivityIndicatorView */; };
+		457888E62A6D0D0000BF363B /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 457888E52A6D0D0000BF363B /* NVActivityIndicatorViewExtended */; };
+		459D5DFE2A6B8AE500D1C6C8 /* ProblemAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459D5DFD2A6B8AE500D1C6C8 /* ProblemAIApp.swift */; };
+		459D5E002A6B8AE500D1C6C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459D5DFF2A6B8AE500D1C6C8 /* ContentView.swift */; };
+		459D5E022A6B8AEE00D1C6C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 459D5E012A6B8AEE00D1C6C8 /* Assets.xcassets */; };
+		459D5E052A6B8AEE00D1C6C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 459D5E042A6B8AEE00D1C6C8 /* Preview Assets.xcassets */; };
+		459D5E072A6B8AEE00D1C6C8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459D5E062A6B8AEE00D1C6C8 /* Persistence.swift */; };
+		459D5E0A2A6B8AEE00D1C6C8 /* ProblemAI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 459D5E082A6B8AEE00D1C6C8 /* ProblemAI.xcdatamodeld */; };
+		459D5E122A6C246200D1C6C8 /* NewYork.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 459D5E112A6C246100D1C6C8 /* NewYork.ttf */; };
+		459D5E232A6C9C0A00D1C6C8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459D5E222A6C9C0A00D1C6C8 /* ViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		459D5DFA2A6B8AE500D1C6C8 /* ProblemAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		459D5DFD2A6B8AE500D1C6C8 /* ProblemAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemAIApp.swift; sourceTree = "<group>"; };
+		459D5DFF2A6B8AE500D1C6C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		459D5E012A6B8AEE00D1C6C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		459D5E042A6B8AEE00D1C6C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		459D5E062A6B8AEE00D1C6C8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		459D5E092A6B8AEE00D1C6C8 /* ProblemAI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProblemAI.xcdatamodel; sourceTree = "<group>"; };
+		459D5E0B2A6B8AEE00D1C6C8 /* ProblemAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProblemAI.entitlements; sourceTree = "<group>"; };
+		459D5E112A6C246100D1C6C8 /* NewYork.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewYork.ttf; sourceTree = "<group>"; };
+		459D5E222A6C9C0A00D1C6C8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		459D5DF72A6B8AE500D1C6C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457888E62A6D0D0000BF363B /* NVActivityIndicatorViewExtended in Frameworks */,
+				457888E42A6D0D0000BF363B /* NVActivityIndicatorView in Frameworks */,
+				457888E12A6CA47B00BF363B /* OpenAISwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		459D5DF12A6B8AE500D1C6C8 = {
+			isa = PBXGroup;
+			children = (
+				459D5DFC2A6B8AE500D1C6C8 /* ProblemAI */,
+				459D5DFB2A6B8AE500D1C6C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		459D5DFB2A6B8AE500D1C6C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				459D5DFA2A6B8AE500D1C6C8 /* ProblemAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		459D5DFC2A6B8AE500D1C6C8 /* ProblemAI */ = {
+			isa = PBXGroup;
+			children = (
+				459D5DFD2A6B8AE500D1C6C8 /* ProblemAIApp.swift */,
+				459D5DFF2A6B8AE500D1C6C8 /* ContentView.swift */,
+				459D5E012A6B8AEE00D1C6C8 /* Assets.xcassets */,
+				459D5E062A6B8AEE00D1C6C8 /* Persistence.swift */,
+				459D5E0B2A6B8AEE00D1C6C8 /* ProblemAI.entitlements */,
+				459D5E222A6C9C0A00D1C6C8 /* ViewModel.swift */,
+				459D5E112A6C246100D1C6C8 /* NewYork.ttf */,
+				459D5E082A6B8AEE00D1C6C8 /* ProblemAI.xcdatamodeld */,
+				459D5E032A6B8AEE00D1C6C8 /* Preview Content */,
+			);
+			path = ProblemAI;
+			sourceTree = "<group>";
+		};
+		459D5E032A6B8AEE00D1C6C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				459D5E042A6B8AEE00D1C6C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		459D5DF92A6B8AE500D1C6C8 /* ProblemAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459D5E0E2A6B8AEE00D1C6C8 /* Build configuration list for PBXNativeTarget "ProblemAI" */;
+			buildPhases = (
+				459D5DF62A6B8AE500D1C6C8 /* Sources */,
+				459D5DF72A6B8AE500D1C6C8 /* Frameworks */,
+				459D5DF82A6B8AE500D1C6C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProblemAI;
+			packageProductDependencies = (
+				457888E02A6CA47B00BF363B /* OpenAISwift */,
+				457888E32A6D0D0000BF363B /* NVActivityIndicatorView */,
+				457888E52A6D0D0000BF363B /* NVActivityIndicatorViewExtended */,
+			);
+			productName = ProblemAI;
+			productReference = 459D5DFA2A6B8AE500D1C6C8 /* ProblemAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		459D5DF22A6B8AE500D1C6C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					459D5DF92A6B8AE500D1C6C8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 459D5DF52A6B8AE500D1C6C8 /* Build configuration list for PBXProject "ProblemAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 459D5DF12A6B8AE500D1C6C8;
+			packageReferences = (
+				457888DF2A6CA47B00BF363B /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				457888E22A6D0D0000BF363B /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
+			productRefGroup = 459D5DFB2A6B8AE500D1C6C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				459D5DF92A6B8AE500D1C6C8 /* ProblemAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		459D5DF82A6B8AE500D1C6C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459D5E122A6C246200D1C6C8 /* NewYork.ttf in Resources */,
+				459D5E052A6B8AEE00D1C6C8 /* Preview Assets.xcassets in Resources */,
+				459D5E022A6B8AEE00D1C6C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		459D5DF62A6B8AE500D1C6C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459D5E232A6C9C0A00D1C6C8 /* ViewModel.swift in Sources */,
+				459D5E072A6B8AEE00D1C6C8 /* Persistence.swift in Sources */,
+				459D5E0A2A6B8AEE00D1C6C8 /* ProblemAI.xcdatamodeld in Sources */,
+				459D5E002A6B8AE500D1C6C8 /* ContentView.swift in Sources */,
+				459D5DFE2A6B8AE500D1C6C8 /* ProblemAIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		459D5E0C2A6B8AEE00D1C6C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		459D5E0D2A6B8AEE00D1C6C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		459D5E0F2A6B8AEE00D1C6C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProblemAI/ProblemAI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProblemAI/Preview Content\"";
+				DEVELOPMENT_TEAM = C496LC49DH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nk.ProblemAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		459D5E102A6B8AEE00D1C6C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProblemAI/ProblemAI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProblemAI/Preview Content\"";
+				DEVELOPMENT_TEAM = C496LC49DH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nk.ProblemAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		459D5DF52A6B8AE500D1C6C8 /* Build configuration list for PBXProject "ProblemAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459D5E0C2A6B8AEE00D1C6C8 /* Debug */,
+				459D5E0D2A6B8AEE00D1C6C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		459D5E0E2A6B8AEE00D1C6C8 /* Build configuration list for PBXNativeTarget "ProblemAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459D5E0F2A6B8AEE00D1C6C8 /* Debug */,
+				459D5E102A6B8AEE00D1C6C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		457888DF2A6CA47B00BF363B /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.0;
+			};
+		};
+		457888E22A6D0D0000BF363B /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		457888E02A6CA47B00BF363B /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 457888DF2A6CA47B00BF363B /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+		457888E32A6D0D0000BF363B /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 457888E22A6D0D0000BF363B /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		457888E52A6D0D0000BF363B /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 457888E22A6D0D0000BF363B /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		459D5E082A6B8AEE00D1C6C8 /* ProblemAI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				459D5E092A6B8AEE00D1C6C8 /* ProblemAI.xcdatamodel */,
+			);
+			currentVersion = 459D5E092A6B8AEE00D1C6C8 /* ProblemAI.xcdatamodel */;
+			path = ProblemAI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 459D5DF22A6B8AE500D1C6C8 /* Project object */;
+}
